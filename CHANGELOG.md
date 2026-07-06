@@ -1,5 +1,9 @@
 # Changelog
 ## Unreleased
+### Changes
+- 
+### Bug fixes
+- Pale Moss Carpet now acts like a carpet @strangelyng
 
 ## [0.13.3] - 05-07-2026
 ### Changes
