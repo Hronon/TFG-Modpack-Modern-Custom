@@ -1,20 +1,20 @@
 {
-	"name": "tfg:beneath/tower_start_pool",
+	"name": "tfg:beneath/tower/basalt_4",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 60,
+			"weight": 40,
 			"element": {
-				"location": "tfg:beneath/tower/3/gilded",
+				"location": "tfg:beneath/tower/4/temp",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
 		{
-			"weight": 40,
+			"weight": 60,
 			"element": {
-				"location": "tfg:beneath/tower/3/basalt",
+				"location": "tfg:beneath/tower/4/temp",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
