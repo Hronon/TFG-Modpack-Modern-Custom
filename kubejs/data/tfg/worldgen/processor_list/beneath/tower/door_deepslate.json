@@ -13,7 +13,8 @@
 				"minecraft:smooth_red_sandstone": "minecraft:deepslate_bricks",
 				"minecraft:smooth_red_sandstone_slab": "minecraft:deepslate_brick_slab",
                 "gtceu:certus_quartz_block": "minecraft:chiseled_polished_blackstone",
-                "createdeco:corner_red_bricks": "minecraft:chiseled_polished_blackstone"
+                "createdeco:corner_red_bricks": "minecraft:chiseled_polished_blackstone",
+				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"
 			}
 		}
 	]

@@ -179,6 +179,13 @@
                     "type": "minecraft:passthrough"
                 }
             }
-	    }
+	    },
+            {
+			"processor_type": "lithostitched:block_swap",
+			"blocks": {
+				"tfc:smooth_sandstone/red": "minecraft:deepslate_bricks",
+				"minecraft:brick_wall": "polished_blackstone_brick_wall"
+            }
+        }
 	]
 }

@@ -13,7 +13,8 @@
 				"minecraft:smooth_red_sandstone": "tfg:rock/bricks_glauberite",
 				"minecraft:smooth_red_sandstone_slab": "tfg:rock/bricks_glauberite_slab",
                 "gtceu:certus_quartz_block": "tfg:rock/chiseled_glauberite",
-                "createdeco:corner_red_bricks": "tfg:rock/chiseled_glauberite"
+                "createdeco:corner_red_bricks": "tfg:rock/chiseled_glauberite",
+				"minecraft:mud_brick_wall": "minecraft:cobbled_deepslate_wall"
 			}
 		}
 	]

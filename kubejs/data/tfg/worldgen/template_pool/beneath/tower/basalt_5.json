@@ -1,12 +1,12 @@
 {
-	"name": "tfg:beneath/tower/temp",
+	"name": "tfg:beneath/tower/basalt_5",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 100,
+			"weight": 40,
 			"element": {
-				"location": "tfg:beneath/tower/5/temp",
-				"processors": "minecraft:empty",
+				"location": "tfg:beneath/tower/5/basalt",
+				"processors": "tfg:beneath/tower/5/basalt",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}

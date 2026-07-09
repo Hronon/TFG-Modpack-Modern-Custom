@@ -279,7 +279,9 @@
 			"processor_type": "lithostitched:block_swap",
 			"blocks": {
 				"minecraft:smooth_quartz": "minecraft:deepslate_bricks",
-				"ae2:quartz_brick_wall": "minecraft:polished_blackstone_brick_wall"
+				"ae2:quartz_brick_wall": "minecraft:polished_blackstone_brick_wall",
+				"tfc:smooth_sandstone/red": "minecraft:deepslate_bricks",
+				"minecraft:brick_wall": "polished_blackstone_brick_wall"
             }
 		}
 	]
