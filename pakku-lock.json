@@ -1,5 +1,5 @@
 {
-    "target": "multiplatform",
+    "target": "curseforge",
     "mc_versions": [
         "1.20.1"
     ],
@@ -1988,6 +1988,49 @@
             ]
         },
         {
+            "pakku_id": "8MNlbXGiC99xZxha",
+            "pakku_links": [
+                "3QJUyVc5jxbc7OFC"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "betterf3"
+            },
+            "name": {
+                "curseforge": "BetterF3"
+            },
+            "id": {
+                "curseforge": "401648"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/4863/626/BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "id": "4863626",
+                    "parent_id": "401648",
+                    "hashes": {
+                        "sha1": "b65cba59e87dc6c6d1aa9c47f09b9996b4e5075d",
+                        "md5": "7411ae023390cf6b148f05a6b685279f"
+                    },
+                    "required_dependencies": [
+                        "348521"
+                    ],
+                    "size": 468517,
+                    "date_published": "2023-11-13T04:17:09.867Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "8jcmjuoMhFDsALTg",
             "pakku_links": [
                 "3Hn4sTVbBvKyQJJS"
@@ -3817,76 +3860,6 @@
             ]
         },
         {
-            "pakku_id": "lePQHTl9cI4dUuqu",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "crash-assistant",
-                "modrinth": "crash-assistant"
-            },
-            "name": {
-                "curseforge": "Crash Assistant",
-                "modrinth": "Crash Assistant"
-            },
-            "id": {
-                "curseforge": "1154099",
-                "modrinth": "ix1qq8Ux"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
-                    "mc_versions": [
-                        "1.19",
-                        "1.19.1",
-                        "1.19.2",
-                        "1.19.3",
-                        "1.19.4",
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/Nl7TL6nT/CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
-                    "id": "Nl7TL6nT",
-                    "parent_id": "ix1qq8Ux",
-                    "hashes": {
-                        "sha512": "7748ed84271a44f9a58528cb571ce9229b00762cbaa9daa012414af5ff1ed4df3f3a33dffcf68d4411d0f4414afa5d25d7fcb6bbc583b595a52ee66ad61f7ecc",
-                        "sha1": "b70324f326cffc2c01e4eee9bf48f808f92bda10"
-                    },
-                    "required_dependencies": [],
-                    "size": 3181623,
-                    "date_published": "2026-06-16T23:37:48.167610Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8262/170/CrashAssistant-forge-1.19-1.20.1-1.11.10.jar",
-                    "id": "8262170",
-                    "parent_id": "1154099",
-                    "hashes": {
-                        "sha1": "b70324f326cffc2c01e4eee9bf48f808f92bda10",
-                        "md5": "32c9e89c2fecb46baabe76568158a6d7"
-                    },
-                    "required_dependencies": [],
-                    "size": 3181623,
-                    "date_published": "2026-06-16T23:37:45.690Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "UK4MA17BjQa9613t",
             "type": "MOD",
             "side": "SERVER",
@@ -4561,7 +4534,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fluidlogistics-1.1.2.jar",
+                    "file_name": "fluidlogistics-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4569,18 +4542,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8373/667/fluidlogistics-1.1.2.jar",
-                    "id": "8373667",
+                    "url": "https://edge.forgecdn.net/files/8379/520/fluidlogistics-1.2.0.jar",
+                    "id": "8379520",
                     "parent_id": "1475079",
                     "hashes": {
-                        "sha1": "4c2e3ff5d84439d46730474c78e05e061363d182",
-                        "md5": "04668699c3fdfb83755999610c37c47f"
+                        "sha1": "8e55f87e853ecd2b2adbd7c2ca804284b13912c6",
+                        "md5": "3cd124063b80782639ea4f8a6bdd7b9f"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 1813305,
-                    "date_published": "2026-07-05T08:41:28.187Z"
+                    "size": 2456196,
+                    "date_published": "2026-07-06T06:31:31.053Z"
                 },
                 {
                     "type": "modrinth",
@@ -5387,6 +5360,43 @@
                     ],
                     "size": 362488,
                     "date_published": "2026-06-30T04:37:18.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MHh5lzQBHHWMj5V8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "distant-horizons"
+            },
+            "name": {
+                "curseforge": "Distant Horizons: A Level of Detail mod"
+            },
+            "id": {
+                "curseforge": "508933"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "DistantHorizons-3.2.0-b-1.20.1-fabric-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8389/142/DistantHorizons-3.2.0-b-1.20.1-fabric-forge.jar",
+                    "id": "8389142",
+                    "parent_id": "508933",
+                    "hashes": {
+                        "sha1": "5667440fdca4d4543c345c9ba6fda2dda64928ca",
+                        "md5": "e3863fee862ff2228786aa444e54adfe"
+                    },
+                    "required_dependencies": [],
+                    "size": 29561297,
+                    "date_published": "2026-07-07T20:27:55.857Z"
                 }
             ]
         },
@@ -6992,96 +7002,6 @@
                     ],
                     "size": 1954591,
                     "date_published": "2023-11-02T08:11:16.840Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MxMrrOyyu2PvCSN8",
-            "pakku_links": [
-                "ieNTt8vgrcfO2nk9",
-                "0eaY2qNvkpQzolFy",
-                "hcwrEZKe0UXf0qM5",
-                "x1EwQZ6H2kVKR3U3"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-chunks-forge"
-            },
-            "name": {
-                "curseforge": "FTB Chunks (NeoForge)"
-            },
-            "id": {
-                "curseforge": "314906"
-            },
-            "export": true,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftb-chunks-forge-2001.3.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8216/874/ftb-chunks-forge-2001.3.8.jar",
-                    "id": "8216874",
-                    "parent_id": "314906",
-                    "hashes": {
-                        "sha1": "ee2d0cdac6d2ca31f43da30f76dff8c6bae9d687",
-                        "md5": "c9c17e13f616fd5ff2f83429e7ae512d"
-                    },
-                    "required_dependencies": [
-                        "419699",
-                        "404468",
-                        "404465"
-                    ],
-                    "size": 1159043,
-                    "date_published": "2026-06-08T15:48:49.447Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "WqKV4LDCkOlDGtOe",
-            "pakku_links": [
-                "MxMrrOyyu2PvCSN8",
-                "tdBDW3xpPBc3E2mt"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftbxaerocompat"
-            },
-            "name": {
-                "curseforge": "FTB Chunks x Xaero's Compat"
-            },
-            "id": {
-                "curseforge": "1357724"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftbxaerocompat-forge-1.1.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7655/63/ftbxaerocompat-forge-1.1.3.jar",
-                    "id": "7655063",
-                    "parent_id": "1357724",
-                    "hashes": {
-                        "sha1": "8a3c74b6a5e285ec755097a76a97a469f2490726",
-                        "md5": "84d22e4c5ea26ee46af69b4caff9ad8c"
-                    },
-                    "required_dependencies": [
-                        "314906",
-                        "317780"
-                    ],
-                    "size": 737596,
-                    "date_published": "2026-02-20T20:20:39.643Z"
                 }
             ]
         },
@@ -9081,206 +9001,6 @@
             ]
         },
         {
-            "pakku_id": "JxrH8ALEiK6HmZOI",
-            "pakku_links": [
-                "zonLLbYfp9ViO9i7"
-            ],
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "icon-xaeros",
-                "modrinth": "icon-xaeros"
-            },
-            "name": {
-                "curseforge": "Icon Xaero's",
-                "modrinth": "Icon Xaero's"
-            },
-            "id": {
-                "curseforge": "888795",
-                "modrinth": "LWGq2eg6"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Icon Xaero's 1.22.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4",
-                        "1.20.3"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7748/284/Icon Xaero's 1.22.zip",
-                    "id": "7748284",
-                    "parent_id": "888795",
-                    "hashes": {
-                        "sha1": "a14777ad5dac4fd37c4429c29165c87f6270102e",
-                        "md5": "808213dd6a4cd8d904c37e56f94036a7"
-                    },
-                    "required_dependencies": [
-                        "263420"
-                    ],
-                    "size": 18866675,
-                    "date_published": "2026-03-12T19:37:56.217Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Icon Xaero's 1.22.zip",
-                    "mc_versions": [
-                        "1.6.1",
-                        "1.6.2",
-                        "1.6.4",
-                        "1.7.2",
-                        "1.7.3",
-                        "1.7.4",
-                        "1.7.5",
-                        "1.7.6",
-                        "1.7.7",
-                        "1.7.8",
-                        "1.7.9",
-                        "1.7.10",
-                        "1.8",
-                        "1.8.1",
-                        "1.8.2",
-                        "1.8.3",
-                        "1.8.4",
-                        "1.8.5",
-                        "1.8.6",
-                        "1.8.7",
-                        "1.8.8",
-                        "1.8.9",
-                        "1.9",
-                        "1.9.1",
-                        "1.9.2",
-                        "1.9.3",
-                        "1.9.4",
-                        "1.10",
-                        "1.10.1",
-                        "1.10.2",
-                        "1.11",
-                        "1.11.1",
-                        "1.11.2",
-                        "1.12",
-                        "1.12.1",
-                        "1.12.2",
-                        "1.13",
-                        "1.13.1",
-                        "1.13.2",
-                        "1.14",
-                        "1.14.1",
-                        "1.14.2",
-                        "1.14.3",
-                        "1.14.4",
-                        "1.15",
-                        "1.15.1",
-                        "1.15.2",
-                        "1.16",
-                        "1.16.1",
-                        "1.16.2",
-                        "1.16.3",
-                        "1.16.4",
-                        "1.16.5",
-                        "1.17",
-                        "1.17.1",
-                        "1.18",
-                        "1.18.1",
-                        "1.18.2",
-                        "1.19",
-                        "1.19.1",
-                        "1.19.2",
-                        "22w42a",
-                        "22w43a",
-                        "22w44a",
-                        "1.19.3",
-                        "1.19.4",
-                        "23w14a",
-                        "23w16a",
-                        "1.20",
-                        "1.20.1",
-                        "23w31a",
-                        "23w32a",
-                        "23w33a",
-                        "23w35a",
-                        "1.20.2-pre1",
-                        "1.20.2",
-                        "23w42a",
-                        "23w43a",
-                        "23w43b",
-                        "23w44a",
-                        "23w45a",
-                        "23w46a",
-                        "1.20.3",
-                        "1.20.4",
-                        "24w03a",
-                        "24w03b",
-                        "24w04a",
-                        "24w05a",
-                        "24w05b",
-                        "24w06a",
-                        "24w07a",
-                        "24w09a",
-                        "24w10a",
-                        "24w11a",
-                        "24w12a",
-                        "24w13a",
-                        "24w14potato",
-                        "24w14a",
-                        "1.20.5-pre1",
-                        "1.20.5-pre2",
-                        "1.20.5-pre3",
-                        "1.20.5",
-                        "1.20.6",
-                        "24w18a",
-                        "24w19a",
-                        "24w19b",
-                        "24w20a",
-                        "1.21",
-                        "1.21.1",
-                        "24w33a",
-                        "24w34a",
-                        "24w35a",
-                        "24w36a",
-                        "24w37a",
-                        "24w38a",
-                        "24w39a",
-                        "24w40a",
-                        "1.21.2-pre1",
-                        "1.21.2-pre2",
-                        "1.21.2",
-                        "1.21.3",
-                        "24w44a",
-                        "24w45a",
-                        "24w46a",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LWGq2eg6/versions/OC90EEmJ/Icon Xaero's 1.22.zip",
-                    "id": "OC90EEmJ",
-                    "parent_id": "LWGq2eg6",
-                    "hashes": {
-                        "sha512": "98b15343928dfb8f42b72eeacb350b388c1781d0f668a74e79dc365e8f780515c073221261fc1051dbf8ca1516d7f2bcc11e45f4ae323369a2a1e3fe4e71ca3d",
-                        "sha1": "a14777ad5dac4fd37c4429c29165c87f6270102e"
-                    },
-                    "required_dependencies": [],
-                    "size": 18866675,
-                    "date_published": "2026-03-12T19:39:29.687693Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "5DpBpI216q8EuQjk",
             "type": "MOD",
             "side": "CLIENT",
@@ -9999,6 +9719,42 @@
                     ],
                     "size": 91754,
                     "date_published": "2026-06-06T03:40:58.047Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "A88Ojoeio6b8z05u",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jade-magnifying-glass"
+            },
+            "name": {
+                "curseforge": "Jade Magnifying Glass"
+            },
+            "id": {
+                "curseforge": "1387947"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jademagnifyingglass-1.20.1-forge-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7239/682/jademagnifyingglass-1.20.1-forge-1.0.0.jar",
+                    "id": "7239682",
+                    "parent_id": "1387947",
+                    "hashes": {
+                        "sha1": "7008de5b0c92df09624a59828ccdc5d703ef51ff",
+                        "md5": "a47688af34707cf0fb011273e88167af"
+                    },
+                    "required_dependencies": [],
+                    "size": 17576,
+                    "date_published": "2025-11-19T18:16:21.130Z"
                 }
             ]
         },
@@ -11126,6 +10882,48 @@
                     "required_dependencies": [],
                     "size": 309137,
                     "date_published": "2024-09-11T12:05:29.630931Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "URyqwvBul4qCodld",
+            "pakku_links": [
+                "fR2my61zK1ySP67C"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "map-atlases-forge"
+            },
+            "name": {
+                "curseforge": "Map Atlases [Forge]"
+            },
+            "id": {
+                "curseforge": "519759"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "map_atlases-1.20-6.0.20.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8146/282/map_atlases-1.20-6.0.20.jar",
+                    "id": "8146282",
+                    "parent_id": "519759",
+                    "hashes": {
+                        "sha1": "d20b4bde9d5c75eaa99c430aff78840ecb145fb1",
+                        "md5": "44ec4a888b2addccddcf8d95a92ce396"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 746226,
+                    "date_published": "2026-05-25T23:39:41.510Z"
                 }
             ]
         },
@@ -13111,6 +12909,47 @@
             ]
         },
         {
+            "pakku_id": "1G3auV6C2xNeqj19",
+            "pakku_links": [
+                "3QJUyVc5jxbc7OFC"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "reconnectible-chains"
+            },
+            "name": {
+                "curseforge": "Reconnectible Chains"
+            },
+            "id": {
+                "curseforge": "1451848"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "connectiblechains-forge-1.20.1-2.2.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8309/343/connectiblechains-forge-1.20.1-2.2.3.jar",
+                    "id": "8309343",
+                    "parent_id": "1451848",
+                    "hashes": {
+                        "sha1": "7e7ef8b6af4e172418fc8b078aee9c4cf263a6e9",
+                        "md5": "9c30fe0a8dcade3d86fdfcbf4cc8db0c"
+                    },
+                    "required_dependencies": [
+                        "348521"
+                    ],
+                    "size": 364294,
+                    "date_published": "2026-06-23T22:56:07.627Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "wTFGhNzs9nXiuoE1",
             "type": "MOD",
             "side": "BOTH",
@@ -14660,6 +14499,47 @@
                     ],
                     "size": 2883884,
                     "date_published": "2026-03-04T12:16:21.448310Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Uhl75afi7W4muTyG",
+            "pakku_links": [
+                "fR2my61zK1ySP67C"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "supplementaries"
+            },
+            "name": {
+                "curseforge": "Supplementaries"
+            },
+            "id": {
+                "curseforge": "412082"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "supplementaries-1.20-3.1.43-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7884/611/supplementaries-1.20-3.1.43-forge.jar",
+                    "id": "7884611",
+                    "parent_id": "412082",
+                    "hashes": {
+                        "sha1": "326d65a29981de28016e3828370d68a8f63e1798",
+                        "md5": "31e94bb39e718edf97d49d8c67ac941a"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 13667742,
+                    "date_published": "2026-04-06T12:12:04.877Z"
                 }
             ]
         },
@@ -16895,132 +16775,6 @@
             ]
         },
         {
-            "pakku_id": "zonLLbYfp9ViO9i7",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "xaeros-minimap",
-                "modrinth": "xaeros-minimap"
-            },
-            "name": {
-                "curseforge": "Xaero's Minimap",
-                "modrinth": "Xaero's Minimap"
-            },
-            "id": {
-                "curseforge": "263420",
-                "modrinth": "1bokaNcj"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "xaerominimap-forge-1.20.1-26.1.0.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/LHQz9XA1/xaerominimap-forge-1.20.1-26.1.0.jar",
-                    "id": "LHQz9XA1",
-                    "parent_id": "1bokaNcj",
-                    "hashes": {
-                        "sha512": "b551a0b1f0d55274e14d63839a597403e1c3e5e72377594401ca25678dadbca68454d7582aa43b5d3bd1f62061a552a4bc1671b24b3dcb0ae3a2bf0436840dd7",
-                        "sha1": "5b2be59a71add73676596d0d3350b832552bac70"
-                    },
-                    "required_dependencies": [],
-                    "size": 2147158,
-                    "date_published": "2026-06-11T11:33:33.331624Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "xaerominimap-forge-1.20.1-26.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8231/196/xaerominimap-forge-1.20.1-26.1.0.jar",
-                    "id": "8231196",
-                    "parent_id": "263420",
-                    "hashes": {
-                        "sha1": "5b2be59a71add73676596d0d3350b832552bac70",
-                        "md5": "35779121a4073ba1097db4e5042d61e3"
-                    },
-                    "required_dependencies": [],
-                    "size": 2147158,
-                    "date_published": "2026-06-11T11:13:37.323Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "tdBDW3xpPBc3E2mt",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "xaeros-world-map",
-                "modrinth": "xaeros-world-map"
-            },
-            "name": {
-                "curseforge": "Xaero's World Map",
-                "modrinth": "Xaero's World Map"
-            },
-            "id": {
-                "curseforge": "317780",
-                "modrinth": "NcUtCpym"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "xaeroworldmap-forge-1.20.1-1.41.2.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/wciL1Yas/xaeroworldmap-forge-1.20.1-1.41.2.jar",
-                    "id": "wciL1Yas",
-                    "parent_id": "NcUtCpym",
-                    "hashes": {
-                        "sha512": "d8291479bb21c7aeff9a507c09f1f62e820a55dfb0a3d447a8938837eb754ca2dc72671ed01cbb4ca21cc39402820980abca936899767c02048463eecd9689a2",
-                        "sha1": "a60d4c8e04a65ffe82f1ac89ab28a52f357fbbf2"
-                    },
-                    "required_dependencies": [],
-                    "size": 1390482,
-                    "date_published": "2026-06-22T08:10:00.621697Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "xaeroworldmap-forge-1.20.1-1.41.2.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8298/683/xaeroworldmap-forge-1.20.1-1.41.2.jar",
-                    "id": "8298683",
-                    "parent_id": "317780",
-                    "hashes": {
-                        "sha1": "a60d4c8e04a65ffe82f1ac89ab28a52f357fbbf2",
-                        "md5": "8e5480d7ea106fb6da96e3a84f8dfe03"
-                    },
-                    "required_dependencies": [],
-                    "size": 1390482,
-                    "date_published": "2026-06-22T07:37:56.790Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "dHJr8CybJVqGuwXG",
             "type": "MOD",
             "slug": {
@@ -17116,6 +16870,42 @@
                     "required_dependencies": [],
                     "size": 1105891,
                     "date_published": "2025-03-23T19:12:55.655767Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "7Kzb9mqoxcXy6hXV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ziplines-rezipped"
+            },
+            "name": {
+                "curseforge": "Ziplines: Rezipped!"
+            },
+            "id": {
+                "curseforge": "1454717"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "zipline-forge-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8398/684/zipline-forge-1.20.1-1.3.0.jar",
+                    "id": "8398684",
+                    "parent_id": "1454717",
+                    "hashes": {
+                        "sha1": "50bc335809c4174f15c120c018b8fcac908fb2b4",
+                        "md5": "fc6f0a585094982298c2bfd59167a8a0"
+                    },
+                    "required_dependencies": [],
+                    "size": 253186,
+                    "date_published": "2026-07-09T07:37:42.980Z"
                 }
             ]
         },
