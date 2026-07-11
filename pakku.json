@@ -1,9 +1,9 @@
 {
-    "name": "TerraFirmaGreg-Modern-Custom",
-    "version": "0.13.3",
+    "name": "TerraFirmaGreg-Modern-0.13.3_Custom",
+    "version": "1.1",
     "release_type": "release",
-    "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
-    "author": "Exception, Xikaro",
+    "description": "Fork of an innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
+    "author": "Hronon",
     "overrides": [
         "config",
         "defaultconfigs",
