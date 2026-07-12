@@ -16772,42 +16772,6 @@
             ]
         },
         {
-            "pakku_id": "O6GZyNwak5rBA6eE",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "visual-blueprint-materials"
-            },
-            "name": {
-                "curseforge": "Visual Blueprint Materials"
-            },
-            "id": {
-                "curseforge": "1580813"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "create-qbp-1.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8285/350/create-qbp-1.1.0.jar",
-                    "id": "8285350",
-                    "parent_id": "1580813",
-                    "hashes": {
-                        "sha1": "6a1c31574ff8bf427ac97b6e178a42ce23dccf6e",
-                        "md5": "b9f6b1858470b8425c349df922326171"
-                    },
-                    "required_dependencies": [],
-                    "size": 25372,
-                    "date_published": "2026-06-20T09:32:55.733Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "6EW3YLKi2mNaNko0",
             "pakku_links": [
                 "dGK4XTJPQF2dqXh1"
