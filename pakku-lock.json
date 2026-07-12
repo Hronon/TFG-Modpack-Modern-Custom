@@ -186,6 +186,44 @@
             ]
         },
         {
+            "pakku_id": "zBWQ5dVvZhHldh7g",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2-organizer"
+            },
+            "name": {
+                "curseforge": "AE2 Organizer"
+            },
+            "id": {
+                "curseforge": "1581862"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AE2Organizer-forge-1.20.1-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8334/800/AE2Organizer-forge-1.20.1-1.2.0.jar",
+                    "id": "8334800",
+                    "parent_id": "1581862",
+                    "hashes": {
+                        "sha1": "8fe3c9d51c1c29e762b576edd544284331b5eb4b",
+                        "md5": "bdc2dfef1450ce2376a932e5847ca832"
+                    },
+                    "required_dependencies": [
+                        "223794"
+                    ],
+                    "size": 98767,
+                    "date_published": "2026-06-28T13:51:56.697Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tIIGT85PQd5pJGf0",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
@@ -4656,6 +4694,47 @@
             ]
         },
         {
+            "pakku_id": "UtgQGymZXUwV4Ir6",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-idlx"
+            },
+            "name": {
+                "curseforge": "Create: Improved Display Link Experience"
+            },
+            "id": {
+                "curseforge": "1456715"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createidlx-1.20.1-1.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8161/404/createidlx-1.20.1-1.5.jar",
+                    "id": "8161404",
+                    "parent_id": "1456715",
+                    "hashes": {
+                        "sha1": "87780fa789876a3e6e8d2b1f8a9f077c6b2ff2a0",
+                        "md5": "446b18eaf42344f3a1507ee8353e6540"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 921696,
+                    "date_published": "2026-05-28T20:24:44.713Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "h91JpkOd7PzSuphT",
             "pakku_links": [
                 "Nw8xTCQngHA15ilh"
@@ -4720,6 +4799,48 @@
                     ],
                     "size": 20245,
                     "date_published": "2024-03-28T06:27:19.888846Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "aCdEgIJDBVXagUWq",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-redstone-link-gui-unofficial-port"
+            },
+            "name": {
+                "curseforge": "Create: Redstone Link GUI [Unofficial Port]"
+            },
+            "id": {
+                "curseforge": "1579457"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createredstonelinkgui-1.20.1-1.9.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8345/225/createredstonelinkgui-1.20.1-1.9.1.jar",
+                    "id": "8345225",
+                    "parent_id": "1579457",
+                    "hashes": {
+                        "sha1": "76c12e7dfea5494e84f3a0b3acad007361deec9d",
+                        "md5": "d10097637d34f19e52d7007b9e4afa3b"
+                    },
+                    "required_dependencies": [
+                        "238222",
+                        "328085"
+                    ],
+                    "size": 268585,
+                    "date_published": "2026-06-30T09:23:27.960Z"
                 }
             ]
         },
@@ -5705,23 +5826,19 @@
             ]
         },
         {
-            "pakku_id": "lJv0QH4ufWOkBTs2",
+            "pakku_id": "xSHGdhLQgXRNobfM",
             "pakku_links": [
                 "UYwzsHbcjulcx9ZL"
             ],
             "type": "MOD",
-            "side": "CLIENT",
             "slug": {
-                "curseforge": "emiaccelerator",
-                "modrinth": "emiaccelerator"
+                "curseforge": "emiaccelerator"
             },
             "name": {
-                "curseforge": "EMIAccelerator",
-                "modrinth": "EmiAccelerator"
+                "curseforge": "EMIAccelerator"
             },
             "id": {
-                "curseforge": "1542062",
-                "modrinth": "tcEn0k7K"
+                "curseforge": "1542062"
             },
             "files": [
                 {
@@ -5746,27 +5863,6 @@
                     ],
                     "size": 33297,
                     "date_published": "2026-05-24T06:46:30.633Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "emi_accelerator-1.0.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/tcEn0k7K/versions/6oY5A4Iy/emi_accelerator-1.0.1.jar",
-                    "id": "6oY5A4Iy",
-                    "parent_id": "tcEn0k7K",
-                    "hashes": {
-                        "sha512": "dafa392a967bcad31427e10b60478f8f13e1d70baf37062dd7488a27448a0512ff6cead593819d7aab327c428a8a501275001701864b756c30563b9b60f273e7",
-                        "sha1": "e7376dea7dc29352ae8a8b20d1fd8d7b1e3402b0"
-                    },
-                    "required_dependencies": [],
-                    "size": 33297,
-                    "date_published": "2026-05-24T06:47:04.335564Z"
                 }
             ]
         },
@@ -7308,42 +7404,6 @@
                     ],
                     "size": 129725,
                     "date_published": "2025-04-09T10:47:38.837Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "8aBD89sLfC3Tzk1t",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "fabricate-it"
-            },
-            "name": {
-                "curseforge": "Fabricate!"
-            },
-            "id": {
-                "curseforge": "1549672"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "fabricate-1.0.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8243/985/fabricate-1.0.3.jar",
-                    "id": "8243985",
-                    "parent_id": "1549672",
-                    "hashes": {
-                        "sha1": "3e320f33d414e654d63dee75d649c6b44d5358ec",
-                        "md5": "1b7f1a3d284d34fae9d20a2dfc9d9f00"
-                    },
-                    "required_dependencies": [],
-                    "size": 110183,
-                    "date_published": "2026-06-13T20:29:54.460Z"
                 }
             ]
         },
@@ -12781,42 +12841,6 @@
                     ],
                     "size": 2365466,
                     "date_published": "2024-04-01T14:08:56.003Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "eqbg0ySX0cfa5CKb",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "pull-it"
-            },
-            "name": {
-                "curseforge": "Pull It"
-            },
-            "id": {
-                "curseforge": "1544743"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "PullIt-1.4.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8133/75/PullIt-1.4.0.jar",
-                    "id": "8133075",
-                    "parent_id": "1544743",
-                    "hashes": {
-                        "sha1": "0c8fe056b15e561ccd2ef33973035868ddd67ed5",
-                        "md5": "d0376eadb0ed73d4cc414dc9e8b1523e"
-                    },
-                    "required_dependencies": [],
-                    "size": 39973,
-                    "date_published": "2026-05-23T14:42:16.157Z"
                 }
             ]
         },
