@@ -33,19 +33,17 @@ const registerCustomRecipes = (event) =>
 	// Mech Trowel
 
 	//# Trowel
-	event.remove({ output: 'mechtrowel:mech_trowel' })
+	event.remove({ id: 'mechtrowel:mech_trowel' })
+	event.remove({ input: 'mechtrowel:reach_upgrade_template' })
+	event.remove({ input: 'mechtrowel:variant_conversion_template' })
 	event.remove({ output: 'mechtrowel:wand_template' })
-	event.remove({ output: 'tfg:trowel' })
 
-	event.shaped('mechtrowel:mech_trowel', [
-		'ABC',
-		'DD '
-	], {
-		A: '#forge:tools/screwdrivers',
-		B: '#forge:screws',
-		C: '#tfc:lumber',
-		D: 'vintageimprovements:invar_sheet',
-	}).id('tfg:shaped/mechtrowel')
+	event.shapeless('mechtrowel:mech_trowel', [
+		'tfg:trowel',
+		'#gtceu:circuits/lv',
+		'#forge:cogwheels',
+		'#forge:tools/wrenches'
+	]).id('tfg:shapeless/mechtrowel')
 
 	//# Templates
 	event.shaped('mechtrowel:wand_template', [
@@ -68,7 +66,3 @@ const registerCustomRecipes = (event) =>
 		S: 'minecraft:stick'
 	}).id('tfg:shaped/trowel/wand_capacity_template')
 }
-
-ServerEvents.recipes(event => {
-	registerCustomRecipes(event)
-})

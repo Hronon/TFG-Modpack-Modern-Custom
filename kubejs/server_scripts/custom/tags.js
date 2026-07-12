@@ -12,13 +12,11 @@ let ZIPLINES = [
 	"tfc:metal/chain/red_steel",
 ]
 
-function registerZiplines(event) {
+const registerCustomTags = (event) => {	
 	ZIPLINES.forEach(item => {
 		event.add('c:chains', item)	
 	})
-}
 
-const removeCustomItems = (event) => {	
 	event.add('c:hidden_from_recipe_viewers', /supplementaries.*/)
 	event.remove('c:hidden_from_recipe_viewers', 'supplementaries:rope')
 	event.remove('c:hidden_from_recipe_viewers', 'supplementaries:slice_map')
@@ -29,8 +27,3 @@ const removeCustomItems = (event) => {
 
 	event.add('c:hidden_from_recipe_viewers', 'tfg:trowel')
 }
-
-ServerEvents.tags('item', event => {
-	registerZiplines(event)
-	removeCustomItems(event)
-})

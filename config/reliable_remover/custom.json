@@ -1,7 +1,6 @@
 {
 	"action": "remove",
 	"items": [
-		"tfg:trowel",
 		"mechtrowel:reach_upgrade_template",
 		"mechtrowel:variant_conversion_template"
 	],
