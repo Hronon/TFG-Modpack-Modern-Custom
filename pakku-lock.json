@@ -7312,6 +7312,42 @@
             ]
         },
         {
+            "pakku_id": "8aBD89sLfC3Tzk1t",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "fabricate-it"
+            },
+            "name": {
+                "curseforge": "Fabricate!"
+            },
+            "id": {
+                "curseforge": "1549672"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fabricate-1.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8243/985/fabricate-1.0.3.jar",
+                    "id": "8243985",
+                    "parent_id": "1549672",
+                    "hashes": {
+                        "sha1": "3e320f33d414e654d63dee75d649c6b44d5358ec",
+                        "md5": "1b7f1a3d284d34fae9d20a2dfc9d9f00"
+                    },
+                    "required_dependencies": [],
+                    "size": 110183,
+                    "date_published": "2026-06-13T20:29:54.460Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "rtNFz7HV20isSbJr",
             "pakku_links": [
                 "NZy1xTZhTOBxDiDt",
@@ -12745,6 +12781,42 @@
                     ],
                     "size": 2365466,
                     "date_published": "2024-04-01T14:08:56.003Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "eqbg0ySX0cfa5CKb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pull-it"
+            },
+            "name": {
+                "curseforge": "Pull It"
+            },
+            "id": {
+                "curseforge": "1544743"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "PullIt-1.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8133/75/PullIt-1.4.0.jar",
+                    "id": "8133075",
+                    "parent_id": "1544743",
+                    "hashes": {
+                        "sha1": "0c8fe056b15e561ccd2ef33973035868ddd67ed5",
+                        "md5": "d0376eadb0ed73d4cc414dc9e8b1523e"
+                    },
+                    "required_dependencies": [],
+                    "size": 39973,
+                    "date_published": "2026-05-23T14:42:16.157Z"
                 }
             ]
         },
