@@ -24,6 +24,7 @@
 - Decreased regeneration pills hunger effect from 180s to 60s @hollow-earth
 - Added mineable with pickaxe tags to girders/struts @SakuraKitsurugi
 - Increase amount of item slots in Vulcanizer. You may need to break and replace the machine controller for this change to go into affect. @TomPlop
+- Smoothies, Juices, and Yogurts have had their volume changed to small. @Redeix
 ### Bug fixes
 - Pale Moss Carpet now acts like a carpet @strangelyng
 - Fix the Chameleon Spraycan being able to be fill with any fluids @Phoenixvine32908
