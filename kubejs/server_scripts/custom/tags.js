@@ -18,13 +18,19 @@ function registerZiplines(event) {
 	})
 }
 
-const removeSupplementariesItems = (event) => {	
+const removeCustomItems = (event) => {	
 	event.add('c:hidden_from_recipe_viewers', /supplementaries.*/)
 	event.remove('c:hidden_from_recipe_viewers', 'supplementaries:rope')
 	event.remove('c:hidden_from_recipe_viewers', 'supplementaries:slice_map')
+
+	// Mech Trowel
+	event.add('c:hidden_from_recipe_viewers', 'mechtrowel:reach_upgrade_template')
+	event.add('c:hidden_from_recipe_viewers', 'mechtrowel:variant_conversion_template')
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:trowel')
 }
 
 ServerEvents.tags('item', event => {
 	registerZiplines(event)
-	removeSupplementariesItems(event)
+	removeCustomItems(event)
 })

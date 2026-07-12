@@ -2,12 +2,13 @@
 "use strict";
 
 
-const registerSupplementariesRecipes = (event) => 
+const registerCustomRecipes = (event) => 
 {
+	// Supplementaries
 	event.remove({ id: 'supplementaries:rope' })
 	event.remove({ id: 'supplementaries:slice_map' })
 
-	// rope
+	//# rope
 	event.shapeless('3x supplementaries:rope', ['firmaciv:rope_coil']).id('tfg:shapeless/firmaciv_rope_to_supplementaries_rope')
 	event.shaped('firmaciv:rope_coil', [
 		'AAA',
@@ -15,27 +16,58 @@ const registerSupplementariesRecipes = (event) =>
 		A: 'supplementaries:rope',
 	}).id('tfg:shaped/supplementaries_rope_to_firmaciv_rope')
 
-	// slice map
+	//# slice map
 	event.shapeless('supplementaries:slice_map', ['minecraft:map']).id('tfg:shapeless/supplementaries_slice_map')
 	event.shapeless('minecraft:map', ['supplementaries:slice_map']).id('tfg:shapeless/supplementaries_slice_map_to_map')
-}
 
-const registerMapAtlasRecipes = (event) =>
-{
+
+	// Map Atlases 
 	event.remove({ mod: 'map_atlases' })
 	event.shapeless('map_atlases:atlas', [
 		'minecraft:writable_book', 
 		'tfc:glue',
 		'minecraft:map'
 	]).id('tfg:shapeless/map_atlas')
-}
 
-const registerJadeSpyglassRecipes = (event) => {
 
+	// Mech Trowel
+
+	//# Trowel
+	event.remove({ output: 'mechtrowel:mech_trowel' })
+	event.remove({ output: 'tfg:trowel' })
+
+	event.shaped('mechtrowel:mech_trowel', [
+		'ABC',
+		'DD '
+	], {
+		A: '#forge:tools/screwdrivers',
+		B: '#forge:screws',
+		C: '#tfc:lumber',
+		D: 'vintageimprovements:invar_sheet',
+	}).id('tfg:shaped/trowel')
+
+	//# Templates
+	event.shaped('mechtrowel:wand_template', [
+		' A ',
+		' PA',
+		'S  '
+	], {
+		A: 'constructionwand:diamond_wand',
+		P: '#forge:ender_pearls',
+		S: 'minecraft:stick'
+	}).id('tfg:shaped/trowel/wand_template')
+
+	event.shaped('mechtrowel:wand_capacity_template', [
+		' A ',
+		' PA',
+		'S  '
+	], {
+		A: 'constructionwand:infinity_wand',
+		P: '#forge:ender_pearls',
+		S: 'minecraft:stick'
+	}).id('tfg:shaped/trowel/wand_capacity_template')
 }
 
 ServerEvents.recipes(event => {
-	registerMapAtlasRecipes(event)
-	registerSupplementariesRecipes(event)
-	registerJadeSpyglassRecipes(event)
+	registerCustomRecipes(event)
 })

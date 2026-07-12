@@ -1,0 +1,15 @@
+{
+	"action": "remove",
+	"items": [
+		"tfg:trowel",
+		"mechtrowel:reach_upgrade_template",
+		"mechtrowel:variant_conversion_template"
+	],
+	"mod": ["supplementaries"],
+	"not": {
+		"items": [
+			"supplementaries:rope",
+			"supplementaries:slice_map"
+		]
+	}
+}

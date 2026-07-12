@@ -10219,48 +10219,6 @@
             ]
         },
         {
-            "pakku_id": "QPvnvmQJPKYjiWsA",
-            "pakku_links": [
-                "bf2svog06ajj5JHE"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "kubejs-gui"
-            },
-            "name": {
-                "curseforge": "KubeJS GUI Overhauled"
-            },
-            "id": {
-                "curseforge": "1383507"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "kubejs_gui_2_1201-forge-1.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8312/171/kubejs_gui_2_1201-forge-1.0.0.jar",
-                    "id": "8312171",
-                    "parent_id": "1383507",
-                    "hashes": {
-                        "sha1": "0559a519db1b9e5895a0d565d123f92c1ff695b6",
-                        "md5": "41e6bfc4caa5a666f0471b202a00ab3f"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 192109,
-                    "date_published": "2026-06-24T12:47:14.717Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "vhVFMlaJp9nsn7Q5",
             "pakku_links": [
                 "64uacGcEw697jVGs"
@@ -16258,6 +16216,43 @@
             ]
         },
         {
+            "pakku_id": "CkXWxJcjpaSIK3xC",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "thoughts"
+            },
+            "name": {
+                "curseforge": "Thoughts | Inner Voice"
+            },
+            "id": {
+                "curseforge": "1584939"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "thoughts-2.5.0-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8309/552/thoughts-2.5.0-forge-1.20.1.jar",
+                    "id": "8309552",
+                    "parent_id": "1584939",
+                    "hashes": {
+                        "sha1": "7c69738aa7fdf6e1cdabba4163435d24e841a08a",
+                        "md5": "54bdf696ac1c169636a544383a096a86"
+                    },
+                    "required_dependencies": [],
+                    "size": 829949,
+                    "date_published": "2026-06-23T23:56:43.183Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jn9KICtb32TaMbxc",
             "type": "MOD",
             "slug": {
@@ -16773,6 +16768,42 @@
                     ],
                     "size": 53779,
                     "date_published": "2024-08-08T08:56:55.124370Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "O6GZyNwak5rBA6eE",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "visual-blueprint-materials"
+            },
+            "name": {
+                "curseforge": "Visual Blueprint Materials"
+            },
+            "id": {
+                "curseforge": "1580813"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create-qbp-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8285/350/create-qbp-1.1.0.jar",
+                    "id": "8285350",
+                    "parent_id": "1580813",
+                    "hashes": {
+                        "sha1": "6a1c31574ff8bf427ac97b6e178a42ce23dccf6e",
+                        "md5": "b9f6b1858470b8425c349df922326171"
+                    },
+                    "required_dependencies": [],
+                    "size": 25372,
+                    "date_published": "2026-06-20T09:32:55.733Z"
                 }
             ]
         },
