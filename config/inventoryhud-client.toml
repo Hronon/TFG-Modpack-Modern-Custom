@@ -29,7 +29,7 @@
 	#Show/Hide armor
 	showMain = true
 	#Show/Hide armor
-	showOff = true
+	showOff = false
 	#Show/Hide armor
 	showArrows = true
 	#Show/Hide armor
@@ -42,9 +42,9 @@
 	#Move all items at once or each one
 	moveAll = true
 	#Show/Hide empty slot icon
-	showEmpty = true
+	showEmpty = false
 	#Show overall count of items in main/off hand
-	showCount = false
+	showCount = true
 	#ArmorHUD scale in persentage from 50 to 150
 	#Range: 50 ~ 150
 	armScale = 100
@@ -59,7 +59,7 @@
 	Potions = true
 	#Potion HUD alpha
 	#Range: 0 ~ 100
-	potAlpha = 100
+	potAlpha = 50
 	#Potion HUD gap
 	#Range: -5 ~ 5
 	potGap = 0
@@ -71,7 +71,7 @@
 	#Range: > 1
 	barDuration = 300
 	#Show hidden effects
-	showHiddenEffects = true
+	showHiddenEffects = false
 	#Disable icons for effects in this list
 	effectsBlackList = []
 	#Show Potion HUD when debug menu is open
