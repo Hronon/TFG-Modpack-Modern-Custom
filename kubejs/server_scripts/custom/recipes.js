@@ -77,8 +77,8 @@ const registerCustomRecipes = (event) =>
 	], {
 		A: 'minecraft:note_block',
 		B: 'simpleradio:copper_wire',
-		C: 'gtceu:mv_machine_casing',
-		D: '#gtceu:circuits/mv',
+		C: 'gtceu:lv_machine_casing',
+		D: '#gtceu:circuits/lv',
 	}).id('tfg:shaped/simpleradio/speaker')
 
 	//# Speaker Module
@@ -181,4 +181,24 @@ const registerCustomRecipes = (event) =>
 		S: 'simpleradio:speaker_module',
 		I: '#gtceu:circuits/lv',
 	}).id('tfg:shaped/simpleradio/transceiver')
+
+	//# Insulator
+	event.shaped('simpleradio:insulator', [
+		'TIT',
+	], {
+		T: '#minecraft:planks',
+		I: 'gtceu:ulv_voltage_coil',
+	}).id('tfg:shaped/simpleradio/insulator')
+
+	//# Radiosmither
+	event.shaped('simpleradio:radiosmither', [
+		'AB ',
+		'DID',
+		'DDD',
+	], {
+		A: 'simpleradio:antenna',
+		B: 'minecraft:amethyst_shard',
+		D: 'minecraft:polished_deepslate',
+		I: '#gtceu:circuits/lv',
+	}).id('tfg:shaped/simpleradio/radiosmither')
 }
