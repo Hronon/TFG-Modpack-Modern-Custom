@@ -16216,43 +16216,6 @@
             ]
         },
         {
-            "pakku_id": "CkXWxJcjpaSIK3xC",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "thoughts"
-            },
-            "name": {
-                "curseforge": "Thoughts | Inner Voice"
-            },
-            "id": {
-                "curseforge": "1584939"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "thoughts-2.5.0-forge-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8309/552/thoughts-2.5.0-forge-1.20.1.jar",
-                    "id": "8309552",
-                    "parent_id": "1584939",
-                    "hashes": {
-                        "sha1": "7c69738aa7fdf6e1cdabba4163435d24e841a08a",
-                        "md5": "54bdf696ac1c169636a544383a096a86"
-                    },
-                    "required_dependencies": [],
-                    "size": 829949,
-                    "date_published": "2026-06-23T23:56:43.183Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "jn9KICtb32TaMbxc",
             "type": "MOD",
             "slug": {

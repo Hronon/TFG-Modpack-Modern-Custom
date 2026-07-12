@@ -34,6 +34,7 @@ const registerCustomRecipes = (event) =>
 
 	//# Trowel
 	event.remove({ output: 'mechtrowel:mech_trowel' })
+	event.remove({ output: 'mechtrowel:wand_template' })
 	event.remove({ output: 'tfg:trowel' })
 
 	event.shaped('mechtrowel:mech_trowel', [
@@ -44,7 +45,7 @@ const registerCustomRecipes = (event) =>
 		B: '#forge:screws',
 		C: '#tfc:lumber',
 		D: 'vintageimprovements:invar_sheet',
-	}).id('tfg:shaped/trowel')
+	}).id('tfg:shaped/mechtrowel')
 
 	//# Templates
 	event.shaped('mechtrowel:wand_template', [
