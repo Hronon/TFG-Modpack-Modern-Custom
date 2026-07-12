@@ -1,5 +1,5 @@
 # Changelog
-## Unreleased
+## [0.13.4] - 12-07-2026
 
 ### Ore Processing
 - New Crushed/Refined Garnet Sand line offering massive amount of Chromium and byproducts (Yttrium)
