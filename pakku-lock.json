@@ -9882,44 +9882,6 @@
             ]
         },
         {
-            "pakku_id": "OIAKrtCl2xJJXipp",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "just-enough-crafting-tree-ject"
-            },
-            "name": {
-                "curseforge": "Just Enough Crafting Tree (JECT)"
-            },
-            "id": {
-                "curseforge": "1456415"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "[1.20.1] forge-JECT-2.3.0-beta1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8280/738/[1.20.1] forge-JECT-2.3.0-beta1.jar",
-                    "id": "8280738",
-                    "parent_id": "1456415",
-                    "hashes": {
-                        "sha1": "1d0a4abf623f1b97ac67924c40d558e98e3b95dc",
-                        "md5": "9c8e8748018de2a3f8b54b1761a78d99"
-                    },
-                    "required_dependencies": [
-                        "238222"
-                    ],
-                    "size": 389762,
-                    "date_published": "2026-06-19T16:05:20.270Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "NZy1xTZhTOBxDiDt",
             "type": "MOD",
             "side": "CLIENT",
@@ -10253,6 +10215,48 @@
                     ],
                     "size": 30960,
                     "date_published": "2025-03-05T00:02:57.116010Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "QPvnvmQJPKYjiWsA",
+            "pakku_links": [
+                "bf2svog06ajj5JHE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs-gui"
+            },
+            "name": {
+                "curseforge": "KubeJS GUI Overhauled"
+            },
+            "id": {
+                "curseforge": "1383507"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "kubejs_gui_2_1201-forge-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8312/171/kubejs_gui_2_1201-forge-1.0.0.jar",
+                    "id": "8312171",
+                    "parent_id": "1383507",
+                    "hashes": {
+                        "sha1": "0559a519db1b9e5895a0d565d123f92c1ff695b6",
+                        "md5": "41e6bfc4caa5a666f0471b202a00ab3f"
+                    },
+                    "required_dependencies": [
+                        "238086"
+                    ],
+                    "size": 192109,
+                    "date_published": "2026-06-24T12:47:14.717Z"
                 }
             ]
         },
