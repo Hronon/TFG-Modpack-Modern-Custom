@@ -1,0 +1,17 @@
+{
+  "schema": 2,
+  "active": 0,
+  "compatKeyEvents": true,
+  "pages": [
+    {
+      "name": "Actions",
+      "count": 6,
+      "slots": {
+        "0": {
+          "keybind": "key.ftbquests.quests",
+          "icon": "ftbquests:book"
+        }
+      }
+    }
+  ]
+}
