@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Create",
+    "icon": "create:wrench",
+    "ops": [
+      {
+        "bin": "first",
+        "unary": "so",
+        "filter": {
+          "provider": "modname_contains",
+          "input": "create"
+        }
+      }
+    ]
+  }
+]

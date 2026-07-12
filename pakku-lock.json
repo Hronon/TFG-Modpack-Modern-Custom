@@ -9882,6 +9882,48 @@
             ]
         },
         {
+            "pakku_id": "J0XSmt5WDFsNyetH",
+            "pakku_links": [
+                "oC0unMVGatUQIsDP"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "just-enough-filters"
+            },
+            "name": {
+                "curseforge": "Just Enough Filters (JEF)"
+            },
+            "id": {
+                "curseforge": "1419713"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "justenoughfilters-3.1.4+forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8311/285/justenoughfilters-3.1.4+forge-1.20.1.jar",
+                    "id": "8311285",
+                    "parent_id": "1419713",
+                    "hashes": {
+                        "sha1": "462ee1b16055ec1a099072866ef1fdcfdbda1726",
+                        "md5": "66fd8a4fa58808c371c1841bf31ec0f2"
+                    },
+                    "required_dependencies": [
+                        "351264"
+                    ],
+                    "size": 1340478,
+                    "date_published": "2026-06-24T08:53:43.313Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NZy1xTZhTOBxDiDt",
             "type": "MOD",
             "side": "CLIENT",
