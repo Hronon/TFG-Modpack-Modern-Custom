@@ -65,4 +65,120 @@ const registerCustomRecipes = (event) =>
 		P: '#forge:ender_pearls',
 		S: 'minecraft:stick'
 	}).id('tfg:shaped/trowel/wand_capacity_template')
+
+	// Simple Voice Radio
+	event.remove({ mod: 'simpleradio' })
+
+	//# Speaker
+	event.shaped('simpleradio:speaker', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'minecraft:note_block',
+		B: 'simpleradio:copper_wire',
+		C: 'gtceu:mv_machine_casing',
+		D: '#gtceu:circuits/mv',
+	}).id('tfg:shaped/simpleradio/speaker')
+
+	//# Speaker Module
+	event.shapeless('simpleradio:speaker_module', [
+		"minecraft:note_block",
+		"create:electron_tube"
+	]).id('tfg:shapeless/simpleradio/speaker_module')
+
+	//# Listener Module
+	event.shapeless('simpleradio:listener_module', [
+		"minecraft:jukebox",
+		"create:electron_tube"
+	]).id('tfg:shapeless/simpleradio/listener_module')
+
+	//# Antenna
+	event.shaped('simpleradio:antenna', [
+		'TAT',
+		' A ',
+		' A '
+	], {
+		A: 'minecraft:iron_ingot',
+		T: 'create:transmitter',
+	}).id('tfg:shaped/simpleradio/antenna')
+
+	//# Wire
+	event.shapeless('simpleradio:copper_wire', [
+		"gtceu:fine_copper_wire",
+	]).id('tfg:shapeless/simpleradio/wire')
+
+	//# Microphone
+	event.shaped('simpleradio:microphone', [
+		' A ',
+		'BCD',
+		' E '
+	], {
+		A: '#minecraft:wool',
+		B: 'create:electron_tube',
+		C: 'simpleradio:listener_module',
+		D: 'simpleradio:copper_wire',
+		E: '#gtceu:circuits/lv',
+	}).id('tfg:shaped/simpleradio/microphone')
+
+	//# Radio
+	event.shaped('simpleradio:radio', [
+		' TA',
+		'EIW',
+		' S '
+	], {
+		A: 'simpleradio:antenna',
+		T: 'create:transmitter',
+		S: 'simpleradio:speaker_module',
+		W: 'simpleradio:copper_wire',
+		E: 'create:electron_tube',
+		I: '#gtceu:circuits/lv'
+	}).id('tfg:shaped/simpleradio/radio')
+
+	//# Transmitter
+	event.shaped('simpleradio:transmitter', [
+		' AB',
+		'QIT',
+		' W '
+	], {
+		A: 'simpleradio:antenna',
+		T: 'create:transmitter',
+		W: 'simpleradio:copper_wire',
+		Q: 'minecraft:quartz',
+		I: 'minecraft:iron_block',
+		B: '#forge:tools/wrenches'
+	}).id('tfg:shaped/simpleradio/transmitter')
+	event.shapeless('simpleradio:transmitter', [
+		"simpleradio:receiver",
+	]).id('tfg:shapeless/simpleradio/transmitter')
+
+	//# Receiver
+	event.shaped('simpleradio:receiver', [
+		'BA ',
+		'QIT',
+		' W '
+	], {
+		A: 'simpleradio:antenna',
+		T: 'create:transmitter',
+		W: 'simpleradio:copper_wire',
+		Q: 'minecraft:quartz',
+		I: 'minecraft:iron_block',
+		B: '#forge:tools/wrenches'
+	}).id('tfg:shaped/simpleradio/receiver')
+	event.shapeless('simpleradio:receiver', [
+		"simpleradio:transmitter",
+	]).id('tfg:shapeless/simpleradio/receiver')
+
+	//# Transceiver
+	event.shaped('simpleradio:transceiver', [
+		'AL ',
+		'TIT',
+		' S '
+	], {
+		A: 'simpleradio:antenna',
+		T: 'create:transmitter',
+		L: 'simpleradio:listener_module',
+		S: 'simpleradio:speaker_module',
+		I: '#gtceu:circuits/lv',
+	}).id('tfg:shaped/simpleradio/transceiver')
 }
