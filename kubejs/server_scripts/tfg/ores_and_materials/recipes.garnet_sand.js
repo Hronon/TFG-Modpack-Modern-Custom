@@ -24,6 +24,14 @@ function registerTFGGarnetSandLine(event) {
             .duration(20 * 30)
             .EUt(GTValues.VA[GTValues.MV])
 
+    event.recipes.gtceu.chemical_reactor('tfg:garnet_leach_liquor_purified')
+            .itemInputs(Item.of('gtceu:purified_garnet_sand_ore'))
+            .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
+            .itemOutputs(Item.of('gtceu:gypsum_dust', 8), Item.of('gtceu:silicon_dioxide_dust', 3), Item.of('tfg:flawed_garnet_residual_slag_gem', 1))
+            .outputFluids(Fluid.of('tfg:garnet_leach_liquor', 1000))
+            .duration(20 * 30)
+            .EUt(GTValues.VA[GTValues.MV])
+
     event.recipes.gtceu.electric_blast_furnace('tfg:garnet_fusion_clinker')
             .itemInputs(Item.of('tfg:flawed_garnet_residual_slag_gem', 1), Item.of('gtceu:soda_ash_dust', 6))
             .inputFluids(Fluid.of('gtceu:nitrogen', 100))

@@ -1,6 +1,11 @@
 # Changelog
 ## Unreleased
 
+### Ore Processing
+- New Crushed/Refined Garnet Sand line offering massive amount of Chromium and byproducts (Yttrium)
+- Fix Molybdenum being obtainable from other sources
+- Add Quests for these lines
+- Buff the Bauxite line for every byproducts plus Chromium
 ### Palm Fruit Trees
 - Added Coconuts, Dates, Acai, and Oil Palms trees which are a new variety of crop trees.
 - *Palm Fruit Trees* spawn naturally along beaches or in the Beneath within their given climate zones. Information for each tree can be viewed in their tooltip or in the field guide in a future update. Palm fruit clusters will grow around the trees canopy head when it is their fruiting season and climate conditions are met. Clusters advance in age once a day until mature, at which point they can be harvested by right-clicking them, using a harvest basket on them, or throwing a projectile at them (besides snow balls). Harvesting the canopy head block will yield 1-2 saplings. Saplings can be planted on dirt or sand and will grow in stages until they are a full tree; around 5 days per stage and 4 stages. Palm Fruit Saplings can also be cultivated in greenhouses in hanging planters, although they dont give extra saplings.
@@ -10,12 +15,13 @@
 - Coconuts spawn naturally in the overworld along beaches. They can be harvested early for young coconuts which can be drunk for dairy, and water. Or you can harvest them when mature for brown coconuts which yield flesh that can be eaten for dairy. Be careful when harvesting or walking under coconut trees as they can drop on your head and knock you out.
 - More food and meals related to these crops will be coming later. As a tip you can calculate their rainfall zone by taking their hydration requirements and multiplying it by 5.
 ### Ambiental
-- temperature change speed has been temporarily halved until there's a more reasonable way to fight against extreme temperatures.
-- lowered the temperature of many blocks. Players should no longer reach 100C when next to an EBF or -20C when surrounded by snow.
-- temperature damage has been lowered significantly and no longer makes the player lose thirst/hunger
-- when in a cold climate, small completely enclosed rooms will significantly warm the player up. Smaller rooms are considered warmer.
-- encased fans from Create now slightly cool the player down
+- Temperature change speed has been temporarily halved until there's a more reasonable way to fight against extreme temperatures.
+- Lowered the temperature of many blocks. Players should no longer reach 100C when next to an EBF or -20C when surrounded by snow.
+- Temperature damage has been lowered significantly and no longer makes the player lose thirst/hunger
+- When in a cold climate, small completely enclosed rooms will significantly warm the player up. Smaller rooms are considered warmer.
+- Encased fans from Create now slightly cool the player down
 ### Changes
+- Add a quest for Soft Mallet at Steam Age @TomPlop
 - Added new variations of the Beneath tower structure, based on the new gilsonite bricks, basalt, and moss variants. (#4488) @Filiipa
 - Remove always-edible ability from smoothies and yogurt @Redeix
 - Added new methods to craft the various moss blocks (#4487) @OLOXpl

@@ -77,20 +77,20 @@ function registerTFGChromiumProcessing(event) {
                 .itemOutputsRanged('gtceu:spessartine_dust', 0, 2)
                 .itemOutputsRanged('gtceu:almandine_dust', 0, 2)
                 .itemOutputsRanged('tfg:mixed_garnet_dust', 0, 3)
-                .duration(12 * 20)
+                .duration(12 * 5)
                 .EUt(GTValues.VA[GTValues.MV])
 
         event.recipes.gtceu.centrifuge('tfg:uvarovite_dust_from_garnet')
                 .itemInputs(Item.of('tfg:mixed_garnet_dust', 1))
                 .itemOutputs(Item.of('gtceu:uvarovite_dust', 3), Item.of('gtceu:grossular_dust', 2), Item.of('gtceu:andradite_dust', 2), Item.of('gtceu:pyrope_dust', 2))
-                .duration(8 * 20)
+                .duration(8 * 8)
                 .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.electric_blast_furnace('tfg:sodium_chromate_dust')
                 .itemInputs(Item.of('gtceu:uvarovite_dust', 20), Item.of('gtceu:sodium_hydroxide_dust', 18))
                 .itemOutputs(Item.of('tfg:sodium_chromate_dust', 14), Item.of('tfg:wollastonite_dust', 15))
                 .duration(16 * 20)
-                .EUt(GTValues.VA[GTValues.MV])
+                .EUt(GTValues.VA[GTValues.LV])
                 .blastFurnaceTemp(1250)
 
         event.recipes.gtceu.chemical_reactor('tfg:sodium_dichromate_dust')
@@ -98,7 +98,7 @@ function registerTFGChromiumProcessing(event) {
                 .inputFluids(Fluid.of('gtceu:sulfuric_acid', 1000))
                 .itemOutputs(Item.of('tfg:sodium_dichromate_dust', 11), Item.of('tfg:sodium_sulfate_dust', 7))
                 .outputFluids(Fluid.of('minecraft:water', 1000))
-                .duration(14 * 20)
+                .duration(14 * 12)
                 .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.chemical_reactor('tfg:chromium_3_oxide_dust_from_sodium_dichromate_dust')
@@ -106,7 +106,7 @@ function registerTFGChromiumProcessing(event) {
                 .inputFluids(Fluid.of('gtceu:hydrogen', 6000))
                 .itemOutputs(Item.of('tfg:chromium_3_oxide_dust', 5), Item.of('gtceu:sodium_hydroxide_dust', 2))
                 .outputFluids(Fluid.of('minecraft:water', 2000))
-                .duration(12 * 20)
+                .duration(12 * 12)
                 .EUt(GTValues.VA[GTValues.LV])
 
         //#region Chromite
