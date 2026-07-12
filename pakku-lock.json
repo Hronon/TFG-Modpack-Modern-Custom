@@ -186,44 +186,6 @@
             ]
         },
         {
-            "pakku_id": "zBWQ5dVvZhHldh7g",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ae2-organizer"
-            },
-            "name": {
-                "curseforge": "AE2 Organizer"
-            },
-            "id": {
-                "curseforge": "1581862"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AE2Organizer-forge-1.20.1-1.2.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8334/800/AE2Organizer-forge-1.20.1-1.2.0.jar",
-                    "id": "8334800",
-                    "parent_id": "1581862",
-                    "hashes": {
-                        "sha1": "8fe3c9d51c1c29e762b576edd544284331b5eb4b",
-                        "md5": "bdc2dfef1450ce2376a932e5847ca832"
-                    },
-                    "required_dependencies": [
-                        "223794"
-                    ],
-                    "size": 98767,
-                    "date_published": "2026-06-28T13:51:56.697Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "tIIGT85PQd5pJGf0",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
