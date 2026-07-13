@@ -5040,6 +5040,47 @@
             ]
         },
         {
+            "pakku_id": "kTif5F02q5dA1ysW",
+            "pakku_links": [
+                "Nw8xTCQngHA15ilh"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-mobile-packages"
+            },
+            "name": {
+                "curseforge": "Create: Mobile Packages"
+            },
+            "id": {
+                "curseforge": "1232978"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_mobile_packages-1.20.1-0.6.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7654/463/create_mobile_packages-1.20.1-0.6.1.jar",
+                    "id": "7654463",
+                    "parent_id": "1232978",
+                    "hashes": {
+                        "sha1": "d539e8b8a894918875907eb4597df86af17dc46e",
+                        "md5": "1d6c6f351d5eae93b217c7d3629822ca"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 489127,
+                    "date_published": "2026-02-20T17:46:30.133Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "aCdEgIJDBVXagUWq",
             "pakku_links": [
                 "Nw8xTCQngHA15ilh"
