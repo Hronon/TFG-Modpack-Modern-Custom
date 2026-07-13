@@ -202,22 +202,23 @@ const registerCustomRecipes = (event) =>
 		I: '#gtceu:circuits/lv',
 	}).id('tfg:shaped/simpleradio/radiosmither')
 
+
 	// Create: Mobile Packages
 
-	//# Robo bee
+	//# Bee port
 	event.remove({ output: 'create_mobile_packages:bee_port' })
 	event.shaped('create_mobile_packages:bee_port', [
 		'ATA',
 		'CPC',
 		'CCC',
 	], {
-		C: 'minecraft:andesite_casing',
+		C: 'create:andesite_casing',
 		T: 'create:transmitter',
 		P: 'create:packager',
-		A: 'create:andesite_alloy',
+		A: 'gtceu:wrought_iron_ingot',
 	}).id('tfg:shaped/create_mobile_packages/bee_port')
 
-	//# Bee port
+	//# Robo bee
 	event.remove({ output: 'create_mobile_packages:robo_bee' })
 	event.shaped('create_mobile_packages:robo_bee', [
 		'RTR',
@@ -225,7 +226,7 @@ const registerCustomRecipes = (event) =>
 		'CVC',
 	], {
 		R: '#forge:rotors',
-		C: 'minecraft:andesite_casing',
+		C: 'create:andesite_casing',
 		T: 'create:transmitter',
 		L: '#gtceu:circuits/lv',
 		P: 'create:packager',

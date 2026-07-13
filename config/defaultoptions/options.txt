@@ -1,8 +1,8 @@
 guiScale:3
 enableVsync:false
 gamma:1.0
-resourcePacks:["vanilla","mod_resources","gtceu:dynamic_assets","Moonlight Mods Dynamic Assets","afc_compat_assets","afc_data","fabric","firmalife_compat_assets","firmalife_data","tfc_tumbleweed","tfcimprovedbadlands","file/TerraFirmaCraft_New_Animals.zip","file/Perfected Anvil Helper.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip","file/Icon Xaero\u0027s 1.22.zip","builtin/create_repair_asset_overrides"]
-incompatibleResourcePacks:["firmalife_data","file/Perfected Anvil Helper.zip","file/Icon Xaero\u0027s 1.22.zip"]
+resourcePacks:["mod/punchy:punchy","tacz_resources","vanilla","mod_resources","Moonlight Mods Dynamic Assets","afc_compat_assets","afc_data","firmalife_compat_assets","firmalife_data","tfc_tumbleweed","file/TerraFirmaCraft_New_Animals.zip","file/Perfected Anvil Helper.zip","file/ComputerCraft Greg Refreshed 1.1 - 1.20.1.zip","builtin/create_repair_asset_overrides","phoenix_chromatic_codes_dynamic_fonts","supplemental_patches:builtin_shaders","file/S","file/FreshAnimations_v1.10.4.zip","file/Vexxed_Visuals_TFC_v1.2.7.1.zip","file/TFC_Ambiental_Refreshed_1.18-1.21.1.zip"]
+incompatibleResourcePacks:["firmalife_data","file/TFC_Ambiental_Refreshed_1.18-1.21.1.zip"]
 narrator:0
 soundCategory_master:1.0
 soundCategory_music:0.4
