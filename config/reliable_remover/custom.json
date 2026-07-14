@@ -1,22 +1,24 @@
-{
-	"action": "remove",
-	"items": [
-		"mechtrowel:reach_upgrade_template",
-		"mechtrowel:variant_conversion_template",
-		"create_lac:board",
-		"create_lac:lit_board",
-		"create_lac:emergency_button",
-		"create_lac:lumious_component",
-		"create_lac:raw_lumious_component",
-		"simpleradio:spuddie_talkie",
-		"simpleradio:transmitting_module",
-		"simpleradio:receiving_module"
-	],
-	"mod": ["supplementaries"],
-	"not": {
+[
+	{
+		"action": "remove",
 		"items": [
-			"supplementaries:rope",
-			"supplementaries:slice_map"
-		]
+			"mechtrowel:reach_upgrade_template",
+			"mechtrowel:variant_conversion_template",
+			"create_lac:board",
+			"create_lac:lit_board",
+			"create_lac:emergency_button",
+			"create_lac:lumious_component",
+			"create_lac:raw_lumious_component",
+			"simpleradio:spuddie_talkie",
+			"simpleradio:transmitting_module",
+			"simpleradio:receiving_module"
+		],
+		"mod": ["supplementaries"],
+		"not": {
+			"items": [
+				"supplementaries:rope",
+				"supplementaries:slice_map"
+			]
+		}
 	}
-}
+]

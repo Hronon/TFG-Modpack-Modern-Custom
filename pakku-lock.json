@@ -1389,6 +1389,7 @@
         {
             "pakku_id": "zN95SosjAwq6AnMB",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "armored-arms"
             },
@@ -8386,6 +8387,44 @@
             ]
         },
         {
+            "pakku_id": "fa7cKDD10tK3pVr0",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "fresh-moves"
+            },
+            "name": {
+                "curseforge": "Fresh Moves"
+            },
+            "id": {
+                "curseforge": "990406"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20.6",
+                        "1.20.4"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6105/672/-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip",
+                    "id": "6105672",
+                    "parent_id": "990406",
+                    "hashes": {
+                        "sha1": "7049cc12935ff4be20173c908ad946f530861a4c",
+                        "md5": "9425263fea042911f13a1482f4c3f436"
+                    },
+                    "required_dependencies": [],
+                    "size": 321871,
+                    "date_published": "2025-01-20T05:17:47.973Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "p8kyG4QWwjHOps4L",
             "type": "MOD",
             "side": "SERVER",
@@ -12521,42 +12560,6 @@
                     ],
                     "size": 2851119,
                     "date_published": "2024-12-24T23:33:42.216148Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "EZ12uW9FsSwqxqJP",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "offline-avatar"
-            },
-            "name": {
-                "curseforge": "Offline Avatar"
-            },
-            "id": {
-                "curseforge": "1600800"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "offlineavatar-2.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8402/741/offlineavatar-2.0.0.jar",
-                    "id": "8402741",
-                    "parent_id": "1600800",
-                    "hashes": {
-                        "sha1": "67af54fb2763a008cc1a38a13726bf5d1c282a63",
-                        "md5": "82a2af8a229162141a9f4c3d756ec3a5"
-                    },
-                    "required_dependencies": [],
-                    "size": 20832,
-                    "date_published": "2026-07-09T22:14:00.780Z"
                 }
             ]
         },

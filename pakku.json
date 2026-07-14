@@ -32,6 +32,9 @@
         "defaultconfigs/ftbranks/ranks.snbt"
     ],
     "projects": {
+        "armored-arms": {
+            "side": "CLIENT"
+        },
         "ambient-environment": {
             "side": "CLIENT"
         },
