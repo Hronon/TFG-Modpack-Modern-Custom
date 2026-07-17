@@ -2996,91 +2996,6 @@
             ]
         },
         {
-            "pakku_id": "ZgbLBakCRt30wski",
-            "pakku_links": [
-                "l8kXZITgWOlWNo96",
-                "fR2my61zK1ySP67C"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "glowworks"
-            },
-            "name": {
-                "curseforge": "Colorful Lighting (Glowworks)"
-            },
-            "id": {
-                "curseforge": "1380836"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "glowworks-1.20-1.0.4-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8378/832/glowworks-1.20-1.0.4-forge.jar",
-                    "id": "8378832",
-                    "parent_id": "1380836",
-                    "hashes": {
-                        "sha1": "7ee9cd21b03057f767eab106cfd700a0c5cc8e91",
-                        "md5": "42da9ebca283d796aeaf9edc4ff8d2ba"
-                    },
-                    "required_dependencies": [
-                        "1373023",
-                        "499980"
-                    ],
-                    "size": 763073,
-                    "date_published": "2026-07-06T02:32:58.370Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "l8kXZITgWOlWNo96",
-            "pakku_links": [
-                "PDnn8hOodQ10vlXc"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "colorful-lighting-sodium-compat"
-            },
-            "name": {
-                "curseforge": "Colorful Lighting (Sodium Compat)"
-            },
-            "id": {
-                "curseforge": "1373023"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "colorful_lighting-1.20.1-2.6.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8373/875/colorful_lighting-1.20.1-2.6.1.jar",
-                    "id": "8373875",
-                    "parent_id": "1373023",
-                    "hashes": {
-                        "sha1": "bd8867c9932ef75b16c1b8fe0eab7cbf7f15e101",
-                        "md5": "1c9a37e32a44085c4c0993eb0a37fbfd"
-                    },
-                    "required_dependencies": [
-                        "908741"
-                    ],
-                    "size": 264804,
-                    "date_published": "2026-07-05T09:33:35.463Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "qbSjw1FZx0wmGMza",
             "pakku_links": [
                 "y0UC3kpLVhVgLz9b"
@@ -12560,6 +12475,42 @@
                     ],
                     "size": 2851119,
                     "date_published": "2024-12-24T23:33:42.216148Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "9OErboOQWeS0UvyA",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "omega-flashlight"
+            },
+            "name": {
+                "curseforge": "Omega Flashlight"
+            },
+            "id": {
+                "curseforge": "1590809"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "omegaflashlight-0.7.3-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8441/788/omegaflashlight-0.7.3-1.20.1.jar",
+                    "id": "8441788",
+                    "parent_id": "1590809",
+                    "hashes": {
+                        "sha1": "5960c4f2cfc79dd60db00b05f04c5539d3d90462",
+                        "md5": "946ba2866914f463b6a18ea70a6b4406"
+                    },
+                    "required_dependencies": [],
+                    "size": 886782,
+                    "date_published": "2026-07-16T03:19:24.743Z"
                 }
             ]
         },

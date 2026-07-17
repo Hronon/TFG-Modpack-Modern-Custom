@@ -233,4 +233,39 @@ const registerCustomRecipes = (event) =>
 		A: 'create:stock_ticker',
 		V: 'create:item_vault',
 	}).id('tfg:shaped/create_mobile_packages/robo_bee')
+
+	// Omega Flashlight
+	event.remove({ mod: 'omegaflashlight' })
+
+	//# Flashlight
+	event.shaped('omegaflashlight:flashlight', [
+		' B ',
+		'IIP'
+	], {
+		B: '#minecraft:buttons',
+		I: 'gtceu:wrought_iron_ingot',
+		P: '#forge:glass_panes'
+	}).id('tfg:shaped/omegaflashlight/flashlight')
+
+	//# Lamp
+	event.shaped('omegaflashlight:basic_lamp', [
+		' P ',
+		'PGP',
+		' W '
+	], {
+		P: '#forge:glass_panes',
+		G: 'minecraft:glowstone',
+		W: 'gtceu:wrought_iron_ingot'
+	}).id('tfg:shaped/omegaflashlight/basic_lamp')
+
+	//# Batteries
+
+	// until mod support energy and external batteries
+	event.shapeless('omegaflashlight:large_battery', [
+		'#gtceu:batteries',
+	]).id('tfg:shapeless/omegaflashlight/from_gtceu_large_battery')
+
+	event.shapeless('omegaflashlight:large_battery', [
+		'omegaflashlight:large_battery',
+	]).id('tfg:shapeless/omegaflashlight/large_battery')
 }

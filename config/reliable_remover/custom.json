@@ -12,7 +12,10 @@
 			"simpleradio:spuddie_talkie",
 			"simpleradio:transmitting_module",
 			"simpleradio:receiving_module"
-		],
+		]
+	},
+	{
+		"action": "remove",
 		"mod": ["supplementaries"],
 		"not": {
 			"items": [
@@ -20,5 +23,15 @@
 				"supplementaries:slice_map"
 			]
 		}
+	},
+	{
+		"action": "remove",
+		"items": [
+			"omegaflashlight:improved_lamp",
+			"omegaflashlight:high_quality_lamp",
+			"omegaflashlight:small_battery",
+			"omegaflashlight:medium_battery",
+			"omegaflashlight:dye_table"
+		]
 	}
 ]
