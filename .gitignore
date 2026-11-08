@@ -65,7 +65,7 @@ defaultconfigs/ftbranks/players.snbt
 
 # .minecraft
 !bansoukou/**.zip
-
+/modpack/
 
 /.bobby
 /.mixin.out
