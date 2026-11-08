@@ -55,7 +55,7 @@ jobs:
 
       - name: Run modify_pakku.sh
         shell: bash
-        run: modify_pakku.sh
+        run: bash modify_pakku.sh
 
       - name: Check pakku-lock.json
         id: check_pakku_lock
@@ -314,7 +314,7 @@ jobs:
 
       - name: Run modify_pakku.sh
         shell: bash
-        run: modify_pakku.sh
+        run: bash modify_pakku.sh
 
       - name: Preparing
         shell: bash
