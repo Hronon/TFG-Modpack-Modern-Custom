@@ -226,6 +226,7 @@ jobs:
   build-project:
     name: "[📦] Build Project"
     needs: [info]
+    if: ${{ steps.check.outputs.make_release == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
