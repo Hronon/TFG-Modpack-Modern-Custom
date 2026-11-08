@@ -27,7 +27,6 @@ env:
 jobs:
   info:
     name: "[🖥️] Project Info"
-    needs: [prerun]
     runs-on: ubuntu-latest
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
