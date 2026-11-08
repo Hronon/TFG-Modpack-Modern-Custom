@@ -15,7 +15,6 @@ on:
       - 'pakku-lock.json'
       - 'pakku.json'
       - '.github/workflows/custom-build.yml'
-      - 'modify_pakku.sh'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -37,7 +36,6 @@ jobs:
       loader_version: ${{ steps.check.outputs.loader_version }}
       loader_type: ${{ steps.check.outputs.loader_type }}
       release_type: ${{ steps.check.outputs.release_type }}
-      diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check.outputs.exists }}
       make_release: ${{ steps.check.outputs.make_release }}
       make_pr: ${{ steps.check.outputs.make_pr }}
@@ -77,68 +75,6 @@ jobs:
             echo "✔️ pakku.json"
           fi
 
-      - name: Get latest tag
-        id: latest_tag
-        shell: bash
-        run: |
-          tag=$(git describe --tags --abbrev=0 origin/new-main)
-          if [ -z "$tag" ]; then
-            echo "❌ Latest tag not found" && exit 1
-          else
-            echo "✔️ Latest tag found: $tag"
-            echo "tag=$tag" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Check pakku-lock.json in previous tag
-        id: check_pakku_lock_prev
-        shell: bash
-        run: |
-          if git cat-file -e ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json 2>/dev/null; then
-            echo "✔️ File pakku-lock.json found in previous tag"
-            echo "file_found=true" >> $GITHUB_OUTPUT
-          else
-            echo "❌ File pakku-lock.json not found in previous tag"
-            echo "file_found=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Check and copy pakku-lock.json from previous tag
-        id: check_copy_lock
-        if: steps.check_pakku_lock_prev.outputs.file_found
-        shell: bash
-        run: |
-          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
-          if [ -s ./pakku-lock-prev.json ]; then
-            echo "✔️ File pakku-lock-prev.json created"
-          else
-            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
-          fi
-
-      - name: Run pakku diff
-        id: pakku_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found
-        shell: bash
-        run: |
-          #     curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-          java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
-          if [ -f PROJECTS_DIFF.md ]; then
-            echo "✔️ Comparison completed"
-          else
-            echo "❌ Error: File PROJECTS_DIFF.md not created" && exit 1
-          fi
-
-      - name: Read PROJECTS_DIFF.md to variable
-        id: read_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found
-        shell: bash
-        run: |
-          echo "📝 Reading PROJECTS_DIFF.md to variable..."
-          {
-            echo 'diff<<EOF'
-            cat -v PROJECTS_DIFF.md
-            echo EOF
-          } >> "$GITHUB_OUTPUT"
-          echo "✔️ Diff content read to variable"
-
       - name: Get Pakku Info
         id: pakku_info
         uses: ActionsTools/read-json-action@v1.0.5
@@ -150,7 +86,6 @@ jobs:
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku-lock.json"
-
 
       - name: Changelog Dev Parser
         id: changelog_dev
@@ -204,16 +139,6 @@ jobs:
           echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
           echo "make_pr=${{ steps.check_tag.outputs.exists  == 'false'  && env.DEV_ENVIRONMENT == 'true' }}" >> $GITHUB_OUTPUT
 
-      - name: Format diff
-        id: format_diff
-        if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.2.0
-        with:
-          template: |
-            ```markdown
-            ${{ steps.read_diff.outputs.diff }}
-            ```
-
       - name: Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
@@ -232,7 +157,6 @@ jobs:
 
 
             ${{ steps.changelog_dev.outputs.description }}
-            ${{ steps.format_diff.outputs.text }}
 
   create-pr:
     name: "[🤝] Create Release PR"
@@ -416,16 +340,6 @@ jobs:
           fi
           echo "✔️ All artifacts found"
 
-      - name: Format diff
-        id: format_diff
-        if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v2.2.0
-        with:
-          template: |
-            ```markdown
-            ${{ needs.info.outputs.diff }}
-            ```
-
       - name: Create release
         id: release
         uses: softprops/action-gh-release@v3.0.2
@@ -435,7 +349,6 @@ jobs:
           target_commitish: ${{ github.ref_name }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
