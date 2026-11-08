@@ -69,6 +69,7 @@ defaultconfigs/ftbranks/players.snbt
 !kubejs/**/*.zip
 !tacz/**/*.zip
 !resourcepacks/*.zip
+/modpack/
 
 /.bobby
 /.mixin.out
