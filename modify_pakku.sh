@@ -1,5 +1,4 @@
-projects=(
-)
+mapfile -t projects < projects.txt
 
 # Change target
 java -jar pakku.jar set --target "curseforge"
