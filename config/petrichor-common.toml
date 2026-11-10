@@ -1,0 +1,46 @@
+
+[weather]
+	#Relative chance of a drizzle in each five-minute window of rain.
+	#Range: 0 ~ 100
+	drizzleWeight = 30
+	#Relative chance of normal rain.
+	#Range: 0 ~ 100
+	rainWeight = 45
+	#Relative chance of a downpour. Thunderstorms follow vanilla thunder.
+	#Range: 0 ~ 100
+	downpourWeight = 25
+	#Minutes for the rain to change by one step (drizzle -> rain -> downpour -> thunderstorm). Rain starts as a drizzle, builds up and eases off again before it stops.
+	#Range: 0.05 ~ 10.0
+	transitionMinutes = 0.5
+	#Percent of light rains in daytime that are sun showers: the sun keeps shining through the rain.
+	#Range: 0 ~ 100
+	sunShowerChance = 20
+	#How fast rain soaks the ground and fills puddles.
+	#Range: 0.1 ~ 10.0
+	fillSpeed = 1.0
+	#How fast rain fills cauldrons, as a multiple of vanilla at normal rain: a drizzle fills them slower, a downpour or a thunderstorm faster. 0 = vanilla speed in every rain.
+	#Range: 0.0 ~ 10.0
+	cauldronFilling = 1.0
+	#How fast the ground dries and puddles shrink after rain.
+	#Range: 0.1 ~ 10.0
+	dryingSpeed = 1.0
+
+[lightning]
+	#Additional lightning strikes per minute near each player during thunderstorms (vanilla strikes still happen). 0 disables.
+	#Range: 0.0 ~ 30.0
+	extraStrikesPerMinute = 1.5
+	#Extra strikes land within this many blocks of a player.
+	#Range: 16 ~ 256
+	strikeRadius = 96
+	#Extra strikes prefer the tallest spot nearby (trees, towers, hilltops) like real lightning.
+	tallObjectAttraction = true
+
+[seasons]
+	#Serene Seasons integration, when Serene Seasons is installed: the season shapes the rain (drizzles and sun showers in spring, downpours and storms in summer, steady rain in autumn), and no rain is drawn or heard in winter outside the tropics or where the season turns it into snow.
+	sereneSeasons = true
+	#How strongly the seasons change the rain: the chances of each rain type and of sun showers, how steady it falls and the seasonal lightning. 0 keeps the rain as set above all year, 2 doubles the seasonal differences.
+	#Range: 0.0 ~ 2.0
+	seasonStrength = 1.0
+	#Summer thunderstorms bring more extra strikes, winter ones fewer.
+	seasonalLightning = true
+

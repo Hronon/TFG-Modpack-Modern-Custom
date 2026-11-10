@@ -1,0 +1,97 @@
+#Quality preset: how far and how many drops, puddles and effects are drawn. Lower it on weak computers.
+#Allowed Values: LOW, MEDIUM, HIGH, ULTRA
+quality = "HIGH"
+
+[rain]
+	#Replace the vanilla rain and snowfall with the improved precipitation. Off: vanilla rain is drawn.
+	enabled = true
+	#Multiplier for the number of rain drops.
+	#Range: 0.1 ~ 3.0
+	density = 1.0
+	#How strongly wind slants the rain. 0 = always straight down.
+	#Range: 0.0 ~ 2.0
+	wind = 1.0
+	#Splashes, ripples and spray where rain hits the ground, water and mobs.
+	splashes = true
+	#Multiplier for the number of splashes.
+	#Range: 0.1 ~ 3.0
+	splashDensity = 1.0
+	#How much rain closes in the view distance. 0 = vanilla fog.
+	#Range: 0.0 ~ 2.0
+	fog = 1.0
+	#Low mist in and after rain: thickest in drizzle, in forests, over water and in hollows, lingering at night and in the morning after the rain. 0 = none.
+	#Range: 0.0 ~ 2.0
+	mist = 1.0
+	#Rainy air: haze that deepens with distance and in valleys, showers drifting through it, an overcast sky with rain shafts on the horizon. Off: a plain fog.
+	atmosphere = true
+	#Rain hisses and steams where it falls on lava, magma blocks and lit campfires, and lava lakes steam in the rain.
+	hotSurfaces = true
+	#Rainbows opposite the sun in every sun shower and sometimes when a rain clears up in daylight.
+	rainbows = true
+	#Percent of rains ending in daylight that leave a rainbow for a while.
+	#Range: 0 ~ 100
+	rainbowChance = 50
+	#Particle Rain integration, when Particle Rain is installed: this mod draws the rain and Particle Rain the snow, dust, fog and the rest of its particles, blown by the same wind. Off: Particle Rain draws its own rain and hides this mod's falling rain and rainy air.
+	particleRain = true
+	#Living Wind integration, when Living Wind is installed: the rain slants the way its wind blows, and blows harder or softer with it. Off: the rain keeps its own wind.
+	livingWind = true
+
+[puddles]
+	#Puddles and wet ground.
+	enabled = true
+	#How much of the ground puddles cover at the same wetness.
+	#Range: 0.2 ~ 1.6
+	coverage = 1.0
+	#Splashes and sounds when walking through puddles.
+	footsteps = true
+
+[runoff]
+	#Rain water running over the ground towards edges and spilling down steps (sheets need quality MEDIUM or higher).
+	rivulets = true
+	#Water pouring off roof edges and cliffs, and drops falling from leaves, also for a while after the rain.
+	drips = true
+	#Multiplier for the number of falling drips.
+	#Range: 0.1 ~ 3.0
+	dripDensity = 1.0
+
+[lightning]
+	#Branching lightning with a growing leader, return strokes and afterglow. Off: vanilla bolts.
+	customBolts = true
+	#Thunder arrives after the flash, delayed by distance at the speed of sound, and sounds deeper far away.
+	delayedThunder = true
+	#Speed of sound in blocks per second for the thunder delay (one block = one meter).
+	#Range: 50.0 ~ 2000.0
+	soundSpeed = 343.0
+	#Brightness of lightning flashes on the world and sky. Lower it if flashes are uncomfortable. The vanilla 'Hide Lightning Flashes' option also turns them off.
+	#Range: 0.0 ~ 1.0
+	flashBrightness = 1.0
+	#Frequency of distant, purely visual lightning and flashes inside the clouds during thunderstorms. 0 disables.
+	#Range: 0.0 ~ 3.0
+	distantLightning = 1.0
+
+[cinematic]
+	#The world darkens for a moment before lightning strikes nearby, as if holding its breath.
+	darkenBeforeStrike = true
+	#A close strike overexposes the view for an instant, the eyes then need a moment to see in the dark again, and the bolt lingers as a fading afterimage.
+	flashExposure = true
+	#A strike right next to you leaves you half deaf for a moment: the rain goes faint and dull and comes back over a few seconds.
+	deafeningStrikes = true
+
+[sound]
+	#Volume of the rain ambience (also follows the Weather volume slider).
+	#Range: 0.0 ~ 2.0
+	rainVolume = 1.0
+	#Rain drumming on the roof above you when you are under cover: tin, planks, glass, a tent or a thick roof.
+	roofSounds = true
+	#Rain heard through walls, windows and roofs sounds muffled (low-pass filter), not only quieter. Turned off automatically when Sound Physics Remastered is installed.
+	muffling = true
+	#Volume of single drops falling from roofs, edges and leaves.
+	#Range: 0.0 ~ 2.0
+	dripVolume = 1.0
+	#Volume of the wind in heavy rain and thunderstorms.
+	#Range: 0.0 ~ 2.0
+	windVolume = 1.0
+	#Volume of thunder.
+	#Range: 0.0 ~ 2.0
+	thunderVolume = 1.0
+

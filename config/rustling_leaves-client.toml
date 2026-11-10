@@ -1,0 +1,113 @@
+
+[leaves]
+	#Maximum number of moving leaves simulated at once (0 disables the mod). Leaves lying on the ground
+	#are not counted: they are stored as leaf litter and cost almost nothing.
+	#Range: 0 ~ 40000
+	maxLeaves = 8000
+	#How often leaves fall from trees (multiplier, 0 disables falling leaves).
+	#Range: 0.0 ~ 10.0
+	fallRate = 1.0
+	#Whether the tree matters: birches shed more leaves, spruces and other conifers hardly any.
+	treeFallRates = true
+	#Whether leaves placed by players (hedges, leaf roofs, decorations) shed leaves and get a leaf carpet
+	#under them like trees do. Off keeps builds tidy; leaves broken by hand still burst either way.
+	placedLeaves = false
+	#Radius around the camera, in blocks, in which trees drop leaves.
+	#Range: 8 ~ 96
+	spawnRadius = 32
+	#Thickness of the natural leaf carpet under trees, in leaves per quarter block (0 = no carpet).
+	#Falling leaves stop thickening it beyond this; piles you make are not limited.
+	#Range: 0 ~ 40
+	carpetDepth = 4
+	#How many in-game days fallen leaves lie on the ground before they have rotted away. They thin out
+	#gradually, leaf by leaf; thick piles last longer than a thin carpet. Under trees new leaves keep falling,
+	#so the forest floor stays covered. 0 keeps leaves until something moves them. Snow clears leaves anyway;
+	#with Serene Seasons they also rot faster in late autumn and winter (seasons.seasonalDecay).
+	#Leaf piles of Immersive Weathering rot only with their block.
+	#Range: 0.0 ~ 100.0
+	litterLifetime = 10.0
+	#Whether forests start with leaves banked against walls and trunks and the odd leaf pile.
+	naturalPiles = true
+	#Size of the leaves (multiplier).
+	#Range: 0.3 ~ 3.0
+	leafSize = 1.0
+	#Draw leaves with this mod's original textures (a few leaf shapes, needles and petals) instead of the
+	#falling leaves of newer Minecraft versions.
+	oldLeafTextures = false
+	#Pixel shadows: falling leaves cast a crisp shadow on the ground under them, leaves on piles cast
+	#one on the leaves below, and piles shade the ground around their foot. Drawn like the leaves, so they
+	#work with shader packs.
+	shadows = true
+	#Share of leaves that fall in autumn colors (yellow, orange, red, brown) instead of the tree's color.
+	#Range: 0.0 ~ 1.0
+	autumnColors = 0.35
+	#How far away lying leaves are shown, in blocks (also limited by the render distance).
+	#Beyond about 70 blocks they are drawn as a cheap simplified layer.
+	#Range: 48 ~ 256
+	litterDistance = 128
+	#With Immersive Weathering installed, its leaf piles are drawn as leaf litter of this mod: they look like
+	#its leaf piles and the leaves on top react to wind and footsteps (the pile itself stays as long as the block).
+	#Off: the piles keep their own look and falling leaves land on top of them.
+	immersiveWeatheringPiles = true
+	#With Realistic Waves installed, leaves floating on the water ride its swell and surf, rising and tilting
+	#with every wave. Off: they lie at the flat water level of vanilla.
+	realisticWaves = true
+	#With Living Wind installed, leaves blow the way its wind blows, as strong as it blows, so they fly along
+	#with its wind vanes and particles. With Petrichor or Hoarfrost, leaves blow the way the rain and snow slant.
+	#Gusts, squalls and whirlwinds stay. Off: leaves keep their own wind.
+	livingWind = true
+	#With Falling Leaves or Living Wind installed, also show their own falling leaf particles. Off (the default):
+	#only the leaves of this mod fall, so trees do not shed twice; Falling Leaves still drops snow from snowy
+	#leaves and Living Wind still blows grass, plants and dust.
+	fallingLeavesMod = false
+	#Leaves released when a leaves block is broken or decays.
+	#Range: 0 ~ 64
+	leavesPerBreak = 14
+
+[physics]
+	#Strength of the wind (multiplier, 0 for still air). Wind is stronger in rain and thunderstorms.
+	#Range: 0.0 ~ 4.0
+	windStrength = 1.0
+	#How often squalls (gust fronts that strip the trees) and leaf whirlwinds happen (multiplier, 0 disables).
+	#Range: 0.0 ~ 10.0
+	windEvents = 1.0
+	#How strongly players, mobs and projectiles stir up leaves (multiplier, 0 disables).
+	#Range: 0.0 ~ 3.0
+	entityStrength = 1.0
+	#How strongly explosions blow leaves away (multiplier, 0 disables).
+	#Range: 0.0 ~ 3.0
+	explosionStrength = 1.0
+	#Sneak + right click leaf litter with a hoe or shovel to rake it into a pile (without sneaking the tool works as usual).
+	raking = true
+
+[seasons]
+	#With Serene Seasons installed, leaf fall follows the season: leaves fall in autumn (from early autumn,
+	#most in mid and late autumn, the last ones in early winter) and hardly at all in winter, spring and summer;
+	#cherry trees shed their blossom in spring. The litter on the ground rots away before the snow comes, and new
+	#ground gets a thick carpet of leaves only in autumn. Biomes and dimensions without seasons are not affected.
+	enabled = true
+	#How many leaves fall at the peak of autumn, in mid and late autumn (multiplier of leaves.fallRate;
+	#about a third of it in early autumn, a few in early winter).
+	#Range: 0.0 ~ 10.0
+	autumnFallRate = 3.0
+	#How many leaves still fall in mid and late winter (multiplier of leaves.fallRate, 0 = none).
+	#Range: 0.0 ~ 1.0
+	winterFallRate = 0.0
+	#How many leaves fall in spring and summer (multiplier of leaves.fallRate, 0 = none).
+	#Cherry blossom petals in spring are not affected.
+	#Range: 0.0 ~ 1.0
+	springSummerFallRate = 0.02
+	#How the share of autumn colors grows towards late autumn (multiplier of leaves.autumnColors, capped at all leaves).
+	#Range: 0.0 ~ 10.0
+	autumnColors = 3.0
+	#How fast lying leaves rot in late autumn and winter, in natural leaf carpets per sub-season, on top of
+	#leaves.litterLifetime. At 1 the autumn litter is gone early in winter, before the snow builds up, however
+	#long the seasons are. 0: leaves rot at the same pace all year.
+	#Range: 0.0 ~ 5.0
+	seasonalDecay = 1.0
+
+[sound]
+	#Volume of the rustle when you walk through leaves (0 mutes it).
+	#Range: 0.0 ~ 1.0
+	rustleVolume = 0.6
+
