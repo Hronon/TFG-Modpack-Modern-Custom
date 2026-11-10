@@ -1,5 +1,4 @@
 from pathlib import Path
-from dataclasses import dataclass
 import subprocess
 import sys
 import shutil
@@ -12,11 +11,35 @@ BACKUPS = PWD / 'project_backups'
 REPLACE = PWD / 'replace_with_original'
 DATA = PWD / 'data'
 
-@dataclass(frozen=True)
 class ModMeta:
-	slug: str
-	cf_id: str
-	side: str
+	_slug: str
+	_cf_id: str
+	_side: str
+
+	def __init__(self, slug: str, cf_id: str, side: str) -> None:
+		self._slug = slug
+		self._cf_id = cf_id
+		self._side = side
+
+	@property
+	def slug(self) -> str:
+		return self._slug
+
+	@property
+	def id(self) -> str:
+		return self._cf_id
+
+	@property
+	def side(self) -> str:
+		if self._side not in ['CLIENT', 'SERVER']:
+			return 'BOTH'
+		return self._side
+
+	def project(self) -> str:
+		if self._cf_id:
+			return f'{self._slug}:{self._cf_id}'
+
+		return self._slug
 
 def backup(path: str):
 	backup_to = BACKUPS / path
@@ -64,7 +87,7 @@ def replace_with_original(files: list[str], base: Path):
 def add_mod(mod: ModMeta):
 	subprocess.run([
 		'java', '-jar', 'pakku.jar',
-		'add', 'prj', '--curseforge', f'{mod.slug}:{mod.cf_id}',
+		'add', 'prj', '--curseforge', mod.project(),
 	], check = True, input="Y\n", text = True, cwd=PWD)
 
 	if mod.side == 'BOTH':
@@ -72,7 +95,7 @@ def add_mod(mod: ModMeta):
 
 	subprocess.run([
 		'java', '-jar', 'pakku.jar',
-		'cfg', 'prj', '--side', f'{mod.side}', f'{mod.slug}'
+		'cfg', 'prj', '--side', mod.side, mod.slug
 	], check = True, cwd=PWD)
 
 def create_soft_links(target: Path):
@@ -126,23 +149,25 @@ def get_mods() -> List[ModMeta]:
 	mods = []
 	with open(PROJECTS, 'r') as f:
 		while line := f.readline():
+			print(f'Trying to add parse {line.strip()}')
 			line = re.sub(r'\s+', '', line).split(':')
-			if len(line) < 2:
-				print(f'Curseforge mod slug and file id should be provided.\n You provided: {line}')
+
+			if len(line) > 3:
+				line = line[:3]
+
+			while len(line) < 3:
+				line.append('')
+
+			slug, cf_id, side = line
+			if not slug:
+				print('Slug is required! Skipping')
 				continue
 
-			if not line[1].isnumeric():
-				print(f'Curseforge file id is not numeric: {line[1]}. Skipping')
+			if cf_id and not cf_id.isnumeric():
+				print(f'Curseforge project file id is not numeric: {cf_id}. Skipping')
 				continue
 
-			side = 'BOTH'
-			if len(line) >= 3:
-				side = line[2]
-				if side not in ['CLIENT', 'SERVER', 'BOTH']:
-					print(line, f'Incorrect side value: {side} [CLIENT|SERVER|BOTH]. Skipping')
-					continue
-
-			mods.append(ModMeta(line[0], line[1], side))
+			mods.append(ModMeta(slug, cf_id, side))
 	return mods
 
 def modify(replace: list[str], base: Path):
