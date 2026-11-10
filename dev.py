@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import subprocess
 import sys
 import shutil
-from typing import Optional
+from typing import List, Optional
 import re
 
 PWD = Path(__file__).resolve().parent
@@ -67,6 +67,9 @@ def add_mod(mod: ModMeta):
 		'add', 'prj', '--curseforge', f'{mod.slug}:{mod.cf_id}',
 	], check = True, input="Y\n", text = True, cwd=PWD)
 
+	if mod.side == 'BOTH':
+		return
+
 	subprocess.run([
 		'java', '-jar', 'pakku.jar',
 		'cfg', 'prj', '--side', f'{mod.side}', f'{mod.slug}'
@@ -104,7 +107,22 @@ def fetch():
 		'java', '-jar', 'pakku.jar', 'fetch',
 	], check = True, cwd=PWD)
 
-def modify(replace: list[str], base: Path):
+def update_pakku_config():
+	# Change project info
+	subprocess.run([
+		'java', '-jar', 'pakku.jar', 'cfg',
+		'--name', 'TFG-Custom',
+		'--author', 'Hronon',
+		'--description', 'Fork of TFG-Modern with custom changes',
+	], check = True, cwd=PWD)
+
+def update_target():
+	# Change target
+	subprocess.run([
+		'java', '-jar', 'pakku.jar', 'set', '--target', 'curseforge'
+	], check = True, cwd=PWD)
+
+def get_mods() -> List[ModMeta]:
 	mods = []
 	with open(PROJECTS, 'r') as f:
 		while line := f.readline():
@@ -125,27 +143,34 @@ def modify(replace: list[str], base: Path):
 					continue
 
 			mods.append(ModMeta(line[0], line[1], side))
+	return mods
 
-	subprocess.run([
-		'bash', 'update_pakku.sh'
-	], check = True, cwd=PWD)
+def modify(replace: list[str], base: Path):
 
-	for mod in mods:
+	update_target()
+	for mod in get_mods():
 		add_mod(mod)
+
+	update_pakku_config()
 
 	replace_with_original(replace, base)
 
 def setup_dev(modpack_location: Path):
 	backup_files = [
-			"pakku.json",
-			"pakku-lock.json"
+		"pakku.json",
+		"pakku-lock.json"
 	]
 
 	try:
 		for file in backup_files:
 			backup(file)
 
-		modify(get_files_to_replace(), modpack_location)
+		update_target()
+		for mod in get_mods():
+			add_mod(mod)
+			
+		replace_with_original(get_files_to_replace(), modpack_location)
+
 		create_soft_links(modpack_location)
 		fetch()
 
