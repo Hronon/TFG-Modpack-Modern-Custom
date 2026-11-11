@@ -1,8 +1,9 @@
+from collections import defaultdict
 from pathlib import Path
 import subprocess
 import sys
 import shutil
-from typing import List, Optional
+from typing import Callable, Dict, List, Optional
 import re
 
 PWD = Path(__file__).resolve().parent
@@ -98,6 +99,12 @@ def add_mod(mod: ModMeta):
 		'cfg', 'prj', '--side', mod.side, mod.slug
 	], check = True, cwd=PWD)
 
+def update_mod(mod: ModMeta):
+	subprocess.run([
+		'java', '-jar', 'pakku.jar',
+		'update', mod.project(),
+	], check = True, input="Y\n", text = True, cwd=PWD)
+
 def create_soft_links(target: Path):
 	mp = DATA / 'modpack'
 	mods = mp / 'mods'
@@ -145,20 +152,28 @@ def update_target():
 		'java', '-jar', 'pakku.jar', 'set', '--target', 'curseforge'
 	], check = True, cwd=PWD)
 
-def get_mods() -> List[ModMeta]:
-	mods = []
+def get_mods() -> Dict[str, List[ModMeta]]:
+	mods = defaultdict[str, List[ModMeta]](list)
+
 	with open(PROJECTS, 'r') as f:
 		while line := f.readline():
 			print(f'Trying to add parse {line.strip()}')
 			line = re.sub(r'\s+', '', line).split(':')
 
-			if len(line) > 3:
-				line = line[:3]
+			if len(line) > 4:
+				line = line[:4]
 
-			while len(line) < 3:
+			while len(line) < 4:
 				line.append('')
 
-			slug, cf_id, side = line
+			action, slug, cf_id, side = line
+
+			if not action:
+				action = 'add'
+
+			if action not in ['add', 'update', 'remove']:
+				print(f'Action value must be [add|update|remove]. You provided: {action}')
+
 			if not slug:
 				print('Slug is required! Skipping')
 				continue
@@ -166,15 +181,25 @@ def get_mods() -> List[ModMeta]:
 			if cf_id and not cf_id.isnumeric():
 				print(f'Curseforge project file id is not numeric: {cf_id}. Skipping')
 				continue
+			mods[action].append(ModMeta(slug, cf_id, side))
 
-			mods.append(ModMeta(slug, cf_id, side))
 	return mods
 
+MODS_ACTION_STRATEGY: Dict[str, Callable[[ModMeta], None]] = {
+	'add': add_mod,
+	'update': update_mod,
+	'remove': lambda x: None
+}
+
+def install_mods():
+	for action, mods in get_mods().items():
+		action = MODS_ACTION_STRATEGY[action]
+		for mod in mods:
+			action(mod)
 def modify(replace: list[str], base: Path):
 
 	update_target()
-	for mod in get_mods():
-		add_mod(mod)
+	install_mods()
 
 	update_pakku_config()
 
@@ -191,8 +216,7 @@ def setup_dev(modpack_location: Path):
 			backup(file)
 
 		update_target()
-		for mod in get_mods():
-			add_mod(mod)
+		install_mods()
 			
 		replace_with_original(get_files_to_replace(), modpack_location)
 
