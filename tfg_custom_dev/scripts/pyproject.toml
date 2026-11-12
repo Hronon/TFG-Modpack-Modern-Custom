@@ -1,0 +1,8 @@
+[project]
+name = "tfg-custom-dev-scripts"
+version = "0.1.0"
+description = "Scripts for easier development of TFG-Custom"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.1",
+]
