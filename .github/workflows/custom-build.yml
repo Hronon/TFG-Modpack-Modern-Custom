@@ -55,7 +55,7 @@ jobs:
 
       - name: Modify pakku
         shell: bash
-        run: python3 dev.py modify
+        run: python3 tfg_custom_dev/scripts/modify.py
 
       - name: Check pakku-lock.json
         id: check_pakku_lock
@@ -241,7 +241,7 @@ jobs:
 
       - name: Modify pakku
         shell: bash
-        run: python3 dev.py modify
+        run: python3 tfg_custom_dev/scripts/modify.py
 
       - name: Preparing
         shell: bash

@@ -12,3 +12,6 @@
 :favorite-items-curseforge-edition:9166473:CLIENT
 :omni-wheel:9500588:CLIENT
 :create-pattern-schematics:7207725
+:lever-drugster:8320015
+:windblown:9565266
+:create-green-print:8659650
